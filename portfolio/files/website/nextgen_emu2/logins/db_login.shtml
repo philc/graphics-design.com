@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+	<TITLE>Next Gen Database Login</TITLE>
+</HEAD>
+
+<body bgcolor="#5A789C" background="bg.gif" text="white" link="aqua" vlinks="teals">
+<center>
+<form method=post action="http://www.philisoft.com/cgi-bin/emu/input.cgi">
+<br>
+
+<table border=0 cellpadding=0 cellspacing=2>
+<tr><td><font size=2 face="arial">Password: </td><td><input type=password name="password" size=20></td></tr>
+<tr><td><font size=2 face="arial">Emulator ID: </td><td><input type=text name="id" size=20></td></tr>
+<tr><td><font size=2 face="arial">System: </td><td>
+	<SELECT NAME="system">
+	<OPTION value="psx">PSX
+	<OPTION value="n64">N64
+	<OPTION value="sat">Sat
+	<OPTION value="neo">Neo
+
+</SELECT></td></tr></table>
+<br>
+<input type=submit value="Lets Get Serious">
+
+</form>
+
+
+</BODY>
+</HTML>

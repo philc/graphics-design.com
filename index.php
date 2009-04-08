@@ -1,0 +1,72 @@
+<? 
+//Track the traffic
+//include ("scripts/tracker/sc_addhit.php");
+
+$pageTitle = "Free Web Graphics";
+require("templates/header.inc");
+?>
+
+
+<b>Welcome</b><br>
+<img src="layout/divider.png"><br>
+<p>
+Welcome to the Graphic Designer's Studio, a resource to browse my past portfolio, 
+creations, and find free images and downloads for your own designs.
+</p>
+
+<p>
+This site is now a historical resource, and isn't being actively updated. I've enjoyed 
+running the site, receiving feedback, the design community, and being graciously given the 
+opportunity to be 
+creative for a living. Please feel free to use the resources that have collected on this 
+site.
+</p>
+
+
+<table border=0 cellpadding=0 cellspacing=4 width=553>
+<tr><td valign=top width=393>
+<?
+//--------------------------------------------------------------------------------------------------
+//News script
+//--------------------------------------------------------------------------------------------------
+//Require the creation display functions
+//require("scripts/news.inc");
+
+//Which type of news we're viewing
+//$type='all';
+
+//Check script arguments, or define them for the first time
+//if (!isset($offset) || $offset<0)
+//	$offset=0;
+//if (!isset($resultPerPage) || $resultsPerPage <1)
+//	$resultsPerPage=5;
+
+//Display news with (offset, resultsPerPage)
+//$result = displayNews($offset,$resultsPerPage, $type);
+
+?>
+
+</td>
+<!--Side column (books, polls) -->
+<td valign=top width=160>
+
+</td></tr></table>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript" language="javascript">
+<!-- 
+var sc_project=1222284; 
+var sc_invisible=1; 
+var sc_partition=10; 
+var sc_security="e42cb21b"; 
+//-->
+</script>
+
+<script type="text/javascript" language="javascript" 
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><a 
+href="http://www.statcounter.com/" target="_blank"><img  
+src="http://c11.statcounter.com/counter.php?sc_project=1222284&amp;amp;java=0&amp;amp;security=e42cb21b&amp;amp;invisible=1" 
+alt="free stats" border="0"></a> </noscript>
+<!-- End of StatCounter Code -->
+
+<? require("templates/footer.inc"); ?>

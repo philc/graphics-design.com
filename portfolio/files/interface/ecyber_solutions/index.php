@@ -1,0 +1,98 @@
+<body bgcolor="#000000">
+
+
+<SCRIPT LANGUAGE="JavaScript">
+
+     <!--//
+
+     browser_name = navigator.appName;
+     browser_version = parseFloat(navigator.appVersion); 
+
+     if (browser_name == "Netscape" && browser_version >= 3.0) { roll = 'true'; }
+     else if (browser_name == "Microsoft Internet Explorer" && browser_version >= 4.0) { roll = 'ie'; }
+     else { roll = 'false'; }
+
+
+     function msover1(img,ref) { if (roll == 'true') { document.images[img].src = ref; } }
+     function msout1(img,ref)  { if (roll == 'true') { document.images[img].src = ref; } }
+
+
+     function msover2(img1,ref1,img2,ref2) { if (roll == 'true') 
+             { document.images[img1].src = ref1; document.images[img2].src = ref2; } }
+     function msout2(img1,ref1,img2,ref2) { if (roll == 'true')  
+             { document.images[img1].src = ref1; document.images[img2].src = ref2; } }
+                       
+     //-->
+
+     </SCRIPT>
+
+<center>
+
+
+<A href="./" onMouseOver="msover1('profile','menu/profile2.gif');" onMouseOut="msout1('profile','menu/profile.gif');"><img
+name="profile" alt="profile" src="menu/profile.gif" border="0"></A>
+
+<A href="./" onMouseOver="msover1('clients','menu/clients2.gif');" onMouseOut="msout1('clients','menu/clients.gif');"><img
+name="clients" alt="clients" src="menu/clients.gif" border="0"></A>
+
+<A href="./" onMouseOver="msover1('contact','menu/contact2.gif');" onMouseOut="msout1('contact','menu/contact.gif');"><img
+name="contact" alt="contact" src="menu/contact.gif" border="0"></A>
+
+<A href="./" onMouseOver="msover1('news','menu/news2.gif');" onMouseOut="msout1('news','menu/news.gif');"><img
+name="news" alt="news" src="menu/news.gif" border="0"></A>
+
+<A href="./" onMouseOver="msover1('ecom','menu/ecom2.gif');" onMouseOut="msout1('ecom','menu/ecom.gif');"><img
+name="ecom" alt="ecom" src="menu/ecom.gif" border="0"></A>
+
+<A href="./" onMouseOver="msover1('strategy','menu/strategy2.gif');" onMouseOut="msout1('strategy','menu/strategy.gif');"><img
+name="strategy" alt="strategy" src="menu/strategy.gif" border="0"></A>
+
+<A href="./" onMouseOver="msover1('why','menu/why2.gif');" onMouseOut="msout1('why','menu/why.gif');"><img
+name="why" alt="why" src="menu/why.gif" border="0"></A>
+
+<A href="./" onMouseOver="msover1('demo','menu/demo2.gif');" onMouseOut="msout1('demo','menu/demo.gif');"><img
+name="demo" alt="demo" src="menu/demo.gif" border="0"></A>
+
+<A href="./" onMouseOver="msover1('forecast','menu/forecast2.gif');" onMouseOut="msout1('forecast','menu/forecast.gif');"><img
+name="forecast" alt="forecast" src="menu/forecast.gif" border="0"></A>
+
+
+
+
+
+
+<script language="javascript">
+<!--  PreLoad MouseOver Images for Compatible Browsers
+
+browser_name = navigator.appName;
+browser_version = parseFloat(navigator.appVersion); 
+
+if (browser_name == "Netscape" && browser_version >= 3.0) { roll = 'true';}
+else if (browser_name == "Microsoft Internet Explorer" && browser_version >= 4.0) { roll = 'true'; }
+else { roll = 'false'; }
+
+if (roll == 'true') 
+{
+var imglist = new Array (
+"menu/profile2.gif",
+"menu/clients2.gif",
+"menu/contact2.gif",
+"menu/news2.gif",
+"menu/ecom2.gif",
+"menu/strategy2.gif",
+"menu/why2.gif",
+"menu/demo2.gif",
+"menu/forecast2.gif"
+);
+var imgs = new Array();
+
+var count;
+if (document.images)
+ for (count=0; count<imglist.length; count++)
+  {imgs[count]=new Image(); imgs[count].src=imglist[count];}
+
+}
+
+// -->
+
+</script>

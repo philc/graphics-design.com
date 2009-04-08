@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Next Gen Emulation - Contact</title>
+</head>
+
+<!--#include virtual="/emu/templates/top.txt" -->
+
+<!--#include virtual="/emu/templates/menu.txt" -->
+
+<!--#include virtual="/emu/templates/ad.txt" -->
+
+<form method=post action="http://www.philisoft.com/cgi-bin/emu/email.cgi">
+
+<font size=2 face="arial">
+Welcome to the contact page. You can contact us by email through the form below. Just fill out the required fields and submit. This form is in place to act as a filter for attachments; the webmasters receive a lot of email, and unauthorized attachments can bog down the email's download time.
+<center>
+<Table border=0 cellpadding=0 cellspacing=10>
+
+<tr><td><font size=2 face=arial>Your email address:</td><td><font size=2 face=arial><input type=text name="email"></td></tr>
+<tr><td><font size=2 face=arial>Subject:</td><td><font size=2 face=arial><input type=text name="subject" size=40></td></tr>
+<tr><td><font size=2 face=arial>Purpose of message:</td><td><SELECT NAME="purpose">
+	<OPTION value="General-Comments">General Comments
+	<OPTION value="Advertising">Advertising
+	<OPTION value="Link-Exchange">Link Exchange
+	<OPTION value="Emulation News">Emulation news
+	<OPTION value="Other">Other
+</SELECT></td></tr>
+<tr><td><font size=2 face=arial>Message:</td><td><font size=2 face=arial><TEXTAREA NAME="message" ROWS=7 COLS=40>
+</TEXTAREA></td></tr>
+</table>
+<input type=submit value="Submit now">
+</form>
+
+<!--#include virtual="/emu/templates/bottom.txt" -->
+
+
+

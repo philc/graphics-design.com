@@ -1,0 +1,27 @@
+<!--#include virtual="/emu/templates/head.txt" -->
+<title>Next Gen Emulation - PSX, N64, Saturn and Neo Geo Emulation</title>
+<!--#include virtual="/emu/templates/navtop.txt" -->
+
+
+
+<font size="1" face="arial">
+
+<!--#exec cgi="../cgi-bin/emunews/viewnews.cgi" -->
+
+
+
+
+
+<!--#include virtual="/emu/templates/righttop.txt" -->
+
+<font size="1" face="arial">
+<center><U>Introduction:</U></center><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Welcome to Next Gen Emulation. We focus on the newer emulators that emulate the next gen systems (such as N64, PSX, Neo Geo and Saturn). Not sure what emualtion or an emulator is? It's very simple, just click the Introduction to Emulation on the menu to your left.
+<br><br>
+<center><U>Current updates to the site:</U></center><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+New layout!! This thing took a few hours.. 2 background layers, very far out. If you are experiencing browser problems, like very slow/choppy scrolling when using the scrollbar, that's because of the heavy graphics and trasparency layers. Just hit the "Toggle graphics intensity" button to turn off/on transparencies.
+
+
+<!--#include virtual="/emu/templates/footer.txt" -->
+
+

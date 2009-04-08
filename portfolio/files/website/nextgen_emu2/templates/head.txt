@@ -1,0 +1,54 @@
+	
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript">
+     <!--//
+	var togglestate=0;
+     browser_name = navigator.appName;
+     browser_version = parseFloat(navigator.appVersion); 
+     if (browser_name == "Netscape" && browser_version >= 3.0) { roll = 'true'; }
+     else if (browser_name == "Microsoft Internet Explorer" && browser_version >= 4.0) { roll = 'ie'; }
+    else { roll = 'false'; }
+     function msover1(img,ref) { if (roll == 'true') { document.images[img].src = ref; } }
+     function msout1(img,ref)  { if (roll == 'true') { document.images[img].src = ref; } }
+     function msover2(img1,ref1,img2,ref2) { if (roll == 'true') 
+             { document.images[img1].src = ref1; document.images[img2].src = ref2; } }
+     function msout2(img1,ref1,img2,ref2) { if (roll == 'true')  
+             { document.images[img1].src = ref1; document.images[img2].src = ref2; } }
+
+
+	function toggle(){
+		if (browser_name=="Microsoft Internet Explorer"){
+			if (togglestate){bglayer.style.backgroundImage="";togglestate=0;}else{bglayer.style.backgroundImage="URL(http://www.philisoft.com/emu/images/bg2.gif)";togglestate=1;}
+		}
+	}
+
+     //-->
+     </SCRIPT>
+
+
+
+
+ 
+<map name="news_map">
+<area shape="rect" coords="36,1,127,15" href="http://www.philisoft.com/emu/">
+<area shape="rect" coords="32,16,129,33" href="http://www.philisoft.com/emu/archived_news.shtml">
+<area shape="rect" coords="32,34,127,48" href="http://www.philisoft.com/emu/submit_news.shtml">
+<area shape="default" nohref>
+</map>
+
+<map name="menu">
+<area shape="rect" coords="97,35,183,50" href="http://www.philisoft.com/cgi-bin/emu/list.cgi?cat=psx">
+<area shape="rect" coords="94,51,188,65" href="http://www.philisoft.com/cgi-bin/emu/list.cgi?cat=sat">
+<area shape="rect" coords="94,66,188,81" href="http://www.philisoft.com/cgi-bin/emu/list.cgi?cat=neo">
+<area shape="rect" coords="94,83,181,98" href="http://www.philisoft.com/cgi-bin/emu/list.cgi?cat=n64">
+<area shape="rect" coords="31,142,108,169" href="http://www.philisoft.com/emu/info/intro.shtml">
+<area shape="rect" coords="30,171,110,199" href="http://www.philisoft.com/emu/info/timeline.shtml">
+<area shape="rect" coords="34,202,89,216" href="http://www.philisoft.com/emu/info/faq.shtml">
+<area shape="rect" coords="86,255,167,270" href="http://www.philisoft.com/emu/links/emulators.shtml">
+<area shape="rect" coords="87,272,168,285" href="http://www.philisoft.com/emu/links/roms.shtml">
+<area shape="rect" coords="87,286,166,299" href="http://www.philisoft.com/emu/links/news.shtml">
+<area shape="rect" coords="88,301,163,314" href="http://www.philisoft.com/emu/links/other.shtml">
+<area shape="default" nohref>
+</map>

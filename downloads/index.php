@@ -1,0 +1,22 @@
+<? $pageTitle = "Downloads";
+require("../templates/header.inc");
+?>
+
+<b>Downloads</b><br>
+<img src="../layout/divider.png"><br>
+Here you can find files for your computer that involve graphic designing, graphic 
+customization, or other activities. Most are very small (fast) downloads.
+<br><br>
+
+<table border=0 cellpadding=0 cellspacing=4>
+<tr>
+<td><a href="fonts.php"><img src="../layout/icons/fonts.jpg" border=0></a></td>
+<td valign=top><font face=arial><b>Fonts</b><br>
+Visit this section to preview different fonts with various graphical effects, 
+and download the ones you like.
+</td></tr>
+</table>
+
+
+
+<? require("../templates/footer.inc"); ?>

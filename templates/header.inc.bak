@@ -1,0 +1,125 @@
+<html>
+<head>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<? echo "<title>Graphic Designer's Studio - $pageTitle</title>"; ?>
+
+<META name="resource-type" content="document">
+<META name="description" content="Web Page and Graphics design, for hire, and a resource for graphics designers. Site contains free graphics, buttons, textures, tutorials... you name it!">
+<META name="keywords" content="free, graphics, web, free graphics, free web graphics, buttons, psp, psp5, free clipart, free graphics, textures, interfaces, photoshop, fonts, graphics, paint shop pro, plugins, plugin, filters, adobe, tips, tutorials, graphic design, images, buttons, backgrounds">
+<META name="distribution" content="">
+<META name="copyright" content="">
+<meta name="author" content="root">
+<META name="rating" content="General">
+
+<!-- MouseOver Script---------------------------------------------------->
+<META NAME="Generator" CONTENT="Stone's WebWriter 3.5">
+<SCRIPT LANGUAGE="JavaScript">
+     <!--//
+     browser_name = navigator.appName;
+     browser_version = parseFloat(navigator.appVersion); 
+     if (browser_name == "Netscape" && browser_version >= 3.0) { roll = 'true'; }
+     else if (browser_name == "Microsoft Internet Explorer" && browser_version >= 4.0) { 
+roll = 'ie'; }
+    else { roll = 'false'; }
+     function msover1(img,ref) { if (roll == 'true') { document.images[img].src = ref; } }
+     function msout1(img,ref)  { if (roll == 'true') { document.images[img].src = ref; } }
+     function msover2(img1,ref1,img2,ref2) { if (roll == 'true') 
+             { document.images[img1].src = ref1; document.images[img2].src = ref2; } }
+     function msout2(img1,ref1,img2,ref2) { if (roll == 'true')  
+             { document.images[img1].src = ref1; document.images[img2].src = ref2; } }
+     //-->
+     </SCRIPT>
+	
+<style type="text/css">
+	img { border-color: "#004866"}
+</style>
+</head>
+
+
+<body bgcolor=#CFCFCF background="/graphics/layout/background.jpg" link="#D4DEE6" vlink="#004866">
+
+<!--Main page width (800 pixels) table-->
+<centeR>
+<table border=0 cellpadding=0 cellspacing=0 width=770>
+
+<!-- Upper Left Logo --------------------------------------------------->
+<tr><td>
+<img src="/graphics/layout/circleLogo.jpg">
+</td>
+
+<!-- Center logo/header menu-------------------------------------------->
+<td valign=top>
+<img src="/graphics/layout/mainLogo.jpg"><br>
+
+<table border=0 cellpadding=0 cellspacing=0><tr>
+<td><img src="/graphics/layout/header1.jpg"></td>
+
+<td><a href="/graphics/index.php" onMouseOver="msover1('home','/graphics/layout/home2.jpg');"
+onMouseOut="msout1('home','/graphics/layout/home.jpg');">
+<img src="/graphics/layout/home.jpg" name="home" alt="Home" border=0></a></td>
+
+<td><img src="/graphics/layout/header2.jpg"></td>
+
+<td><a href="/graphics/other/contact.php" onMouseOver="msover1('contact','/graphics/layout/contact2.jpg');"
+onMouseOut="msout1('contact','/graphics/layout/contact.jpg');">
+<img src="/graphics/layout/contact.jpg" name="contact" alt="Contact" border=0></a></td>
+
+<td><img src="/graphics/layout/header3.jpg"></td>
+
+<td><a href="/graphics/other/guestbook.php" onMouseOver="msover1('guestbook','/graphics/layout/guestbook2.jpg');"
+onMouseOut="msout1('guestbook','/graphics/layout/guestbook.jpg');">
+<img src="/graphics/layout/guestbook.jpg" name="guestbook" alt="Guestbook" border=0></a></td>
+
+<td><img src="/graphics/layout/header4.jpg"></td>
+</tr></table>
+
+</td></tr>
+
+<!-- Left Menu ----------------------------------------------------------->
+<tr><td valign=top>
+
+<a href="/graphics/freeImages/" onMouseOver="msover1('freeImages','/graphics/layout/freeImages2.jpg');"
+onMouseOut="msout1('freeImages','/graphics/layout/freeImages.jpg');">
+<img src="/graphics/layout/freeImages.jpg" name="freeImages" alt="Free Images" border=0></a><br>
+
+<a href="/graphics/creations/" onMouseOver="msover1('creations','/graphics/layout/creations2.jpg');"
+onMouseOut="msout1('creations','/graphics/layout/creations.jpg');">
+<img src="/graphics/layout/creations.jpg" name="creations" alt="Creations" border=0></a><br>
+
+<a href="/graphics/webDesign/" onMouseOver="msover1('webDesign','/graphics/layout/webDesign2.jpg');"
+onMouseOut="msout1('webDesign','/graphics/layout/webDesign.jpg');">
+<img src="/graphics/layout/webDesign.jpg" name="webDesign" alt="Web Design" border=0></a><br>
+
+<a href="/graphics/portfolio/" onMouseOver="msover1('portfolio','/graphics/layout/portfolio2.jpg');"
+onMouseOut="msout1('portfolio','/graphics/layout/portfolio.jpg');">
+<img src="/graphics/layout/portfolio.jpg" name="portfolio" alt="Portfolio" border=0></a><br>
+
+<a href="/graphics/tipsTricks/" onMouseOver="msover1('tipsTricks','/graphics/layout/tipsTricks2.jpg');"
+onMouseOut="msout1('tipsTricks','/graphics/layout/tipsTricks.jpg');">
+<img src="/graphics/layout/tipsTricks.jpg" name="tipsTricks" alt="Tips & Tricks" border=0></a><br>
+
+<a href="/graphics/downloads/" onMouseOver="msover1('downloads','/graphics/layout/downloads2.jpg');"
+onMouseOut="msout1('downloads','/graphics/layout/downloads.jpg');">
+<img src="/graphics/layout/downloads.jpg" name="downloads" alt="Downloads" border=0></a><br>
+
+<a href="/graphics/webLinks/" onMouseOver="msover1('webLinks','/graphics/layout/webLinks2.jpg');"
+onMouseOut="msout1('webLinks','/graphics/layout/webLinks.jpg');">
+<img src="/graphics/layout/webLinks.jpg" name="webLinks" alt="Web Links" border=0></a><br>
+
+</td>
+
+<!-- Content Portion------------------------------------------------------>
+<td valign=top>
+
+<table border=0 cellpadding=0 cellspacing=0 width=604>
+<tr><td colspan=3>
+<img src="/graphics/layout/content1.jpg"><br>
+</td></tr>
+
+<tr><td width=19 valign=top background="/graphics/layout/contentLeftbg.jpg">
+<img src="/graphics/layout/content2.jpg"><br>
+</td>
+
+<!-- Content Text portion------------------------------------------------->
+<td valign=top width=553 background="/graphics/layout/contentbg.jpg" bgcolor=#A6A6A6>
+<font size=3 face="arial">

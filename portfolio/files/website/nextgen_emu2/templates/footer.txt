@@ -1,0 +1,31 @@
+
+</td></tr></table>
+</td></tr><tr><td><img src="http://www.philisoft.com/emu/images/leftbgbottom.gif"></td></tr></table>
+<center><font size=1 face="arial">(C) 2000 Philisoft
+</td></tr></table>
+
+
+</div>
+</ilayer>
+
+
+
+<script language="javascript">
+
+<!--  PreLoad MouseOver Images for Compatible Browsers
+
+browser_name = navigator.appName;
+
+browser_version = parseFloat(navigator.appVersion); 
+if (browser_name == "Netscape" && browser_version >= 3.0) { roll = 'true';}
+else if (browser_name == "Microsoft Internet Explorer" && browser_version >= 4.0) { roll = 'true'; }
+else { roll = 'false'; }if (roll == 'true') { var imglist = new Array(
+"http://www.philisoft./emu/images/bg2.gif",
+"images/bg2.gif","images/toggle2.gif",
+"http://www.philisoft./emu/images/images/toggle2.gif");
+
+var imgs = new Array();var count;if (document.images) for (count=0; count<imglist.length; count++)  {imgs[count]=new Image(); imgs[count].src=imglist[count];}}
+
+// -->
+
+</script>

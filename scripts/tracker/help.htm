@@ -1,0 +1,307 @@
+<html>
+<head>
+<title>PHP Super Counter :: Help File</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<div align="center">
+  <table width="80%" border="1" cellspacing="0" cellpadding="0" bordercolor="#CCCCCC">
+    <tr> 
+      <td bgcolor="#EFEFEF"> 
+        <div align="center"><font face="Arial, Helvetica, sans-serif"><b><font size="4">PHP 
+          Super Counter 1.01 :: Installing and using the script</font></b></font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="69%"> 
+              <p align="center">&nbsp;</p>
+              <p align="center"><font face="Arial, Helvetica, sans-serif">This 
+                program is free software; you can redistribute it and/or modify<br>
+                it under the terms of the GNU General Public License as published 
+                by<br>
+                the Free Software Foundation; either version 2 of the License, 
+                or<br>
+                (at your option) any later version.</font></p>
+              <p align="center"><font face="Arial, Helvetica, sans-serif"> This 
+                program is distributed in the hope that it will be useful,<br>
+                but WITHOUT ANY WARRANTY; without even the implied warranty of<br>
+                MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the<br>
+                GNU General Public License for more details.</font></p>
+              <p align="center"><font face="Arial, Helvetica, sans-serif"> You 
+                should have received a copy of the <a href="license.txt">GNU General 
+                Public License</a><br>
+                along with this program; if not, write to the Free Software<br>
+                Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 
+                USA</font></p>
+              <p align="center">&nbsp;</p>
+            </td>
+            <td width="31%" bgcolor="#EFEFEF" valign="top"> 
+              <p align="center"><img src="sclogo.gif" width="150" height="150"></p>
+              <p align="center"><font face="Arial, Helvetica, sans-serif"><a href="#introduction">Introduction</a></font></p>
+              <p align="center"><font face="Arial, Helvetica, sans-serif"><a href="#installation">Installation</a></font></p>
+              <p align="center"><font face="Arial, Helvetica, sans-serif"><a href="#configuration">Configuration</a></font></p>
+              <p align="center"><font face="Arial, Helvetica, sans-serif"><a href="#installation">Usage</a></font></p>
+              <p align="center"><font face="Arial, Helvetica, sans-serif"><a href="#history">Version 
+                history</a> </font></p>
+              </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#EFEFEF"> 
+        <div align="left"><font face="Arial, Helvetica, sans-serif"><a name="Introduction"></a> 
+          <b>Introduction</b> - <a href="#installation">Installation</a> - <a href="#configuration">Configuration</a> 
+          - <a href="#installation">Usage</a> - <a href="#history">Version history</a> 
+          </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <div align="left"> 
+          <p><font face="Arial, Helvetica, sans-serif">First off all thank you 
+            for downloading this script, before you install this script make sure 
+            you have the <a href="http://www.abspoel.com/roel-karin/download.php" target="new">latest 
+            version</a>. This PHP script is freeware. Therefore no guarantee on 
+            support or even functionality can be given. However feel free to <a href="http://www.abspoel.com/roel-karin/response.php" target="new">contact 
+            me</a> if you experience problems using this script.</font></p>
+        </div>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#EFEFEF"> 
+        <div align="left"><font face="Arial, Helvetica, sans-serif"><a name="installation"></a> 
+          <a href="#introduction">Introduction</a> - <b>Installation</b> - <a href="#configuration">Configuration</a> 
+          - <a href="#installation">Usage</a> - <a href="#history">Version history</a> 
+          </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <div align="left"> 
+          <p><font face="Arial, Helvetica, sans-serif">Before you start installing 
+            there are a few things you should know:</font></p>
+        </div>
+        <ul>
+          <li> 
+            <div align="left"><font face="Arial, Helvetica, sans-serif">This script 
+              requires a MySql backend.</font></div>
+          </li>
+          <li><font face="Arial, Helvetica, sans-serif">This script relies on 
+            you to import the tables and their data into your database.</font></li>
+          <li><font face="Arial, Helvetica, sans-serif">The scripts need to know 
+            your MySql data to connect.</font> 
+            <div align="left"></div>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#EFEFEF"> 
+        <div align="left"><font face="Arial, Helvetica, sans-serif"><a name="configuration"></a> 
+          <a href="#introduction">Introduction</a> - <a href="#installation">Installation</a> 
+          - <b>Configuration</b> - <a href="#installation">Usage</a> - <a href="#history">Version 
+          history</a> </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <div align="left"> 
+          <div align="left"> 
+            <p><font face="Arial, Helvetica, sans-serif">The first step for using 
+              this script is to create the needed tables in your MySql database, 
+              for this i have included a file called <a href="scounter.sql">scounter.sql</a> 
+              this file contains the SQL statements to create the needed tables. 
+              If you are using <a href="http://phpwizard.net/projects/phpMyAdmin/" target="new">phpMyAdmin</a> 
+              or a simulair product to maintain your database then you can choose 
+              to select the file <b>scounter.sql </b>for execution. The table 
+              will then automaticly be created.</font></p>
+          </div>
+          <blockquote> 
+            <blockquote> 
+              <div align="left"> 
+                <div align="left"></div>
+              </div>
+            </blockquote>
+          </blockquote>
+          <div align="left"> 
+            <p><font face="Arial, Helvetica, sans-serif">When the table is created 
+              you need to configure 2 php scripts to match your needs. </font></p>
+            <p><font face="Arial, Helvetica, sans-serif">The first to edit is 
+              sc_addhit.php, alter the following settings to reflect your database 
+              configuration:</font></p>
+            <p><font face="Arial, Helvetica, sans-serif" color="#990000">$SQL_HOST=&quot;localhost&quot;;<br>
+              $SQL_USER=&quot;MyUserName&quot;;<br>
+              $SQL_PWD=&quot;MyPassWord&quot;;<br>
+              $SQL_DB=&quot;MyDatabase&quot;;</font></p>
+            <p><font face="Arial, Helvetica, sans-serif">These four settings are 
+              the most important settings needed for contacting your database, 
+              usualy LocalHost doesnt need change. However the username, password 
+              and database name are required. The following four settings reflect 
+              the names of the tables needed. If you simply imported the SQL file 
+              mentioned above then these settings dont need changing. (if you 
+              want to keep stats from different sites in the same database you 
+              could edit the sql file and rename the counter and log table, in 
+              that case also change the table names below.)</font></p>
+            <p><font face="Arial, Helvetica, sans-serif"><br>
+              <font color="#990000">$SQL_COUNTTABLE=&quot;SC_COUNTER&quot;;<br>
+              $SQL_LOGTABLE=&quot;SC_LOG&quot;;<br>
+              $SQL_REFERENCETABLE=&quot;SC_REFERENCE&quot;;<br>
+              $SQL_BLOCKIPTABLE=&quot;SC_BLOCKIPS&quot;;</font></font></p>
+            <p><font face="Arial, Helvetica, sans-serif">Also you can enable / 
+              disable the icon displayed when logging hits on a page, by default 
+              the icon is enabled, set the value to false if you wish to disable 
+              it.</font></p>
+            <p><font face="Arial, Helvetica, sans-serif" color="#990000">$showicon 
+              = true;</font></p>
+            <p><font face="Arial, Helvetica, sans-serif">The file sc_information.php 
+              contains the following settings that require configuration:</font></p>
+            <p><font face="Arial, Helvetica, sans-serif" color="#990000">$SQL_HOST=&quot;localhost&quot;;<br>
+              $SQL_USER=&quot;MyUserName&quot;;<br>
+              $SQL_PWD=&quot;MyPassWord&quot;;<br>
+              $SQL_DB=&quot;MyDatabase&quot;;</font></p>
+            <p><font face="Arial, Helvetica, sans-serif">These settins are the 
+              same as the settings for the addhit.php script. Again you can change 
+              the table names but this is only needed if you changed them in the 
+              sql script.</font></p>
+            <p><font face="Arial, Helvetica, sans-serif"><br>
+              <font color="#990000">$SQL_COUNTTABLE=&quot;SC_COUNTER&quot;;<br>
+              $SQL_LOGTABLE=&quot;SC_LOG&quot;;</font></font></p>
+            <p><font face="Arial, Helvetica, sans-serif">These are the color settings 
+              for the statistics page. They offcourse are optional.</font></p>
+            <p><font face="Arial, Helvetica, sans-serif" color="#990000">$TABLE_HEAD_COLOR 
+              = &quot;#CCCCCC&quot;;<br>
+              $TABLE_COLOR = &quot;#0099CC&quot;;<br>
+              $TEXT_COLOR = &quot;#000066&quot;; </font></p>
+          </div>
+          <div align="left"></div>
+        </div>
+        <div align="left"><font face="Arial, Helvetica, sans-serif" color="#FF0000"><b>Thats 
+          it! If you imported the sql script and edited the php scripts as mentioned 
+          then all configuration is done and everything should be ready for usage!</b></font></div>
+        <div align="left"> 
+          <blockquote>&nbsp; </blockquote>
+          <font face="Arial, Helvetica, sans-serif">If you are using a static 
+          IP address then you can block it from the counter by adding the ip address 
+          to the SC_BLOCKIPS table. All IP's entered in that table will be ignored 
+          by the counter. </font> 
+          <blockquote>
+            <div align="left"></div>
+          </blockquote>
+        </div>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#EFEFEF"> 
+        <div align="left"><font face="Arial, Helvetica, sans-serif"><a name="usage"></a> 
+          <a href="#introduction">Introduction</a> - <a href="#installation">Installation</a> 
+          - <a href="#configuration">Configuration</a> - <b>Usage</b> - <a href="#history">Version 
+          history</a> </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <div align="left"> 
+          <p><font face="Arial, Helvetica, sans-serif">The Super Counter can count 
+            for multiple pages at once, it updates the 'global' counter and also 
+            the specific page counter. If you want a page to be counted when hit 
+            then enter the following line of code into your HTML file:</font></p>
+          <p><font face="Arial, Helvetica, sans-serif" color="#990000">&lt;?php 
+            include &quot;sc_addhit.php&quot;; ?&gt;</font></p>
+          <p><font face="Arial, Helvetica, sans-serif">This makes the script log 
+            the hit and displays the counter icon. (note that the ALT text in 
+            the icon gives you information on the counters action taken.</font></p>
+          <p><font face="Arial, Helvetica, sans-serif">If you wish to display 
+            information from the counter on your page then you always need to 
+            include the following tag:</font></p>
+          <p><font face="Arial, Helvetica, sans-serif" color="#990000">&lt;?php 
+            include &quot;sc_information.php&quot;; ?&gt;</font></p>
+          <p><font face="Arial, Helvetica, sans-serif">Once thats done the functions 
+            inside the script are available for use, the following information 
+            require the following tag:</font></p>
+          <div align="center"> 
+            <table width="86%" border="1" cellspacing="0" cellpadding="0" bordercolor="#999999">
+              <tr bgcolor="#666666"> 
+                <td width="40%"><font face="Arial, Helvetica, sans-serif"><b><font color="#FFFFFF">Information</font></b></font></td>
+                <td width="60%"><font face="Arial, Helvetica, sans-serif"><b><font color="#FFFFFF">Tag</font></b></font></td>
+              </tr>
+              <tr> 
+                <td width="40%"><font face="Arial, Helvetica, sans-serif">Total 
+                  hits on this site</font></td>
+                <td width="60%"><font color="#990000" face="Arial, Helvetica, sans-serif">&lt;?PHP 
+                  show_totalhits(); ?&gt;</font></td>
+              </tr>
+              <tr> 
+                <td width="40%"><font face="Arial, Helvetica, sans-serif">Total 
+                  hits to this page</font></td>
+                <td width="60%"><font color="#990000" face="Arial, Helvetica, sans-serif">&lt;?PHP 
+                  show_totalhits_currentpage(); ?&gt;</font></td>
+              </tr>
+              <tr> 
+                <td width="40%"><font face="Arial, Helvetica, sans-serif">Total 
+                  hits today</font></td>
+                <td width="60%"><font color="#990000" face="Arial, Helvetica, sans-serif">&lt;?PHP 
+                  show_todayhits(); ?&gt;</font></td>
+              </tr>
+              <tr> 
+                <td width="40%"> 
+                  <p><font face="Arial, Helvetica, sans-serif">Total hits this 
+                    month</font></p>
+                </td>
+                <td width="60%"><font color="#990000" face="Arial, Helvetica, sans-serif">&lt;?PHP 
+                  show_thismonthhits(); ?&gt;</font></td>
+              </tr>
+              <tr> 
+                <td width="40%"><font face="Arial, Helvetica, sans-serif">Currently 
+                  online</font></td>
+                <td width="60%"><font color="#990000" face="Arial, Helvetica, sans-serif">&lt;?PHP 
+                  show_currentlyonline();?&gt;</font></td>
+              </tr>
+            </table>
+          </div>
+          <p align="left">&nbsp;</p>
+          <p align="left"><font face="Arial, Helvetica, sans-serif">More statistics 
+            can be found by accessing the page <b>sc_stats.php</b></font></p>
+          </div>
+      </td>
+    </tr>
+    <tr> 
+      <td bgcolor="#EFEFEF"> 
+        <div align="left"><font face="Arial, Helvetica, sans-serif"><a name="history"></a> 
+          <a href="#introduction">Introduction</a> - <a href="#installation">Installation</a> 
+          - <a href="#configuration">Configuration</a> - <a href="#usage">Usage</a> 
+          - <b>Version history</b> </font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td> 
+        <p>&nbsp;</p>
+        <ul>
+          <li><b><font face="Arial, Helvetica, sans-serif">Version 1.00 - January 
+            19 2003 </font></b> 
+            <ul>
+              <li><font face="Arial, Helvetica, sans-serif">First release, everything 
+                seems to be running smooth...</font></li>
+            </ul>
+          </li>
+          <li><b><font face="Arial, Helvetica, sans-serif">Version 1.01 - January 
+            20 2003</font> </b> 
+            <ul>
+              <li><font face="Arial, Helvetica, sans-serif">Fixed a bug where 
+                the daily counting was not reset correctly..</font></li>
+            </ul>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td bgcolor="#EFEFEF">&nbsp;</td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
