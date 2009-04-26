@@ -75,7 +75,7 @@ function displayLinks($offset, $resultsPerPage, $type){
 			$link = new Link($row, $type);
 			$link->display();
 			//Display a separator line
-			echo "<img src='../layout/divider.png' width=100%><br>";
+			echo "<img src='/layout/divider.png' width=100%><br>";
 		}
 	}
 	//Return total table size

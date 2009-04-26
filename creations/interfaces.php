@@ -3,7 +3,7 @@ require("../templates/header.inc");
 ?>
 
 <b>Interfaces</b><br>
-<img src="../layout/divider.png"><br>
+<img src="/layout/divider.png"><br>
 Here are some older interfaces - each item on this page is a preview. Most of the interfaces are animated, 
 and to see the full interface, click on its image. Once again, to see the most recent interfaces that 
 accompany webpages, vists my <a href="../portfolio">Portfolio</a> section.

@@ -69,7 +69,7 @@ function displayEntries($offset, $resultsPerPage){
 		$entry = new Entry($row);
 		$entry->display();
 		//Display a separator line
-		echo "<img src='../layout/divider.png' width=100%><br>";
+		echo "<img src='/layout/divider.png' width=100%><br>";
 	}
 	//Return total table size
 	$result=mysql_query("select count(id) as size from guestbook");

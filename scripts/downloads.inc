@@ -80,7 +80,7 @@ function displayDownloads($offset, $resultsPerPage, $type){
 		$download = new Download($row, $type);
 		$download->display();
 		//Display a separator line
-		echo "<img src='../layout/divider.png' width=100%><br>";
+		echo "<img src='/layout/divider.png' width=100%><br>";
 	}
 	
 	//REturn total table size

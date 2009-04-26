@@ -3,7 +3,7 @@ require("../templates/header.inc");
 ?>
 
 <b>Sign the GDS Guestbook</b><br>
-<img src="../layout/divider.png"><br>
+<img src="/layout/divider.png"><br>
 This is where you can sign the guestbook - just fill in the form below. Please don't include 
 too many personal details, such as your exact address or phone number or anything. Just possibly 
 your state or country, and whatever message you want to leave. No foul language, and messages are limited 

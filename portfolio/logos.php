@@ -3,7 +3,7 @@ require("../templates/header.inc");
 ?>
 
 <b>Logos</b><br>
-<img src="../layout/divider.png"><br>
+<img src="/layout/divider.png"><br>
 These are standalone logos that were designed separately from the website. To see logos that I've made that were integrated into website layouts, visit the <a href="websits.php">websites</a> section of my portfolio.
 
 <br><br>

@@ -13,7 +13,7 @@ require("../templates/header.inc");
 ?>
 
 <b>Links</b><br>
-<img src="../layout/divider.png"><br>
+<img src="/layout/divider.png"><br>
 These are sites that I personally reccomend. I don't have links that just give me traffic; 
 I've personally visited every site and either like the design or use it often myself.
 <br>

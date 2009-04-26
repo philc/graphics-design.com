@@ -3,7 +3,7 @@ require("../templates/header.inc");
 ?>
 
 <b>Interfaces</b><br>
-<img src="../layout/divider.png"><br>
+<img src="/layout/divider.png"><br>
 These are fully featured interfaces designed for clients. I have made many more interfaces that are integrated into the complete website layouts, located in the <a href="websites.php">websites</a> section of my portfolio.
 
 <br><br>

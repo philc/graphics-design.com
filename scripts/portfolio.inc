@@ -78,7 +78,7 @@ function displayPortfolio($offset, $resultsPerPage, $type){
 		$portfolio = new Portfolio($row, $type);
 		$portfolio->display();
 		//Display a separator line
-		echo "<img src='../layout/divider.png' width=100%><br>";
+		echo "<img src='/layout/divider.png' width=100%><br>";
 	}
 	
 	//REturn total table size

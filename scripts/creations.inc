@@ -82,7 +82,7 @@ function displayCreations($offset, $resultsPerPage, $type){
 		$creation = new Creation($row, $type);
 		$creation->display();
 		//Display a separator line
-		echo "<br><img src='../layout/divider.png' width=100%><br>";
+		echo "<br><img src='/layout/divider.png' width=100%><br>";
 	}
 	
 	//Return total table size

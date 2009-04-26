@@ -89,7 +89,7 @@ function displayFreeImages($offset, $resultsPerPage, $type){
 		$freeImage->display();
 		//Display a separator line
 		echo "<tr><td colspan=2>";
-		echo "<img src='../layout/divider.png' width=100%><br>";
+		echo "<img src='/layout/divider.png' width=100%><br>";
 		echo "</td></tr>";
 	}
 	

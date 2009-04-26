@@ -3,7 +3,7 @@ require("../templates/header.inc");
 ?>
 
 <b>Interfaces</b><br>
-<img src="../layout/divider.png"><br>
+<img src="/layout/divider.png"><br>
 I create a lot of personal logos (usually that of "GDS") when I feel creative, 
 or to practice. The demand for good logos is always growing, so it is good to maintain
 fresh styles and new ideas for logo design. As always, for newer, or the latest images, 

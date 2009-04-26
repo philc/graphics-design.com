@@ -3,7 +3,7 @@ require("../templates/header.inc");
 ?>
 
 <b>Desktops</b><br>
-<img src="../layout/divider.png"><br>
+<img src="/layout/divider.png"><br>
 These are actual screenshots of my past and current desktops! Be wary, the images are full captures of my screen, 
 so they are as large as my resolution at the time (meaning: <b>they are very large images</b>). I often use shell enhancement programs, 
 such as <a href="http://www.stardock.com/products/desktopx/">DesktopX</a> and 

@@ -8,11 +8,11 @@ function displayNavArrows($tableSize, $offset, $resultsPerPage, $scriptName){
 	echo "<table border=0 cellpadding=0 cellspacinng=0><tr><td>";
 
 	if ($offset<=0)
-		echo "<img src='../layout/arrowPrevGray.jpg'>";
+		echo "<img src='/layout/arrowPrevGray.jpg'>";
 	else{
 		$newOffset=$offset-$resultsPerPage;
 		echo "<a href='$scriptName?offset=$newOffset&resultsPerPage=$resultsPerPage'>";
-		echo "<img src='../layout/arrowPrev.jpg' border=0></a>";
+		echo "<img src='/layout/arrowPrev.jpg' border=0></a>";
 	}
 
 	if ($offset+$resultsPerPage>$tableSize)
@@ -30,11 +30,11 @@ function displayNavArrows($tableSize, $offset, $resultsPerPage, $scriptName){
 	
 	//Test to see if right arrow is grayed out (can we go right)
 	if ($offset+$resultsPerPage>=$tableSize)	//We can't go further
-		echo "<img src='../layout/arrowNextGray.jpg'>";
+		echo "<img src='/layout/arrowNextGray.jpg'>";
 	else{
 		$newOffset=$offset+$resultsPerPage;
 		echo "<a href='$scriptName?offset=$newOffset&resultsPerPage=$resultsPerPage'>";
-		echo "<img src='../layout/arrowNext.jpg' border=0></a>";
+		echo "<img src='/layout/arrowNext.jpg' border=0></a>";
 	}
 	echo "</td></tr></table>";
 }

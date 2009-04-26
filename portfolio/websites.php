@@ -3,7 +3,7 @@ require("../templates/header.inc");
 ?>
 
 <b>Websites</b><br>
-<img src="../layout/divider.png"><br>
+<img src="/layout/divider.png"><br>
 These are completed website layouts designed for customers. The websites may be nonfunctioning, or using a different layout at the time of viewing, so I have provided a <b>cached</b> version (an original version kept on this site) so you may see the original design. <b>I highly recommend the cached versions.</b>
 
 <br><br>

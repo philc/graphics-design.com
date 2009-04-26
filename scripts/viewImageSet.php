@@ -16,8 +16,8 @@ if (!$path || !$itemsInSet ||!$extension){
 	echo "or visited it from off-site. Please navigate from the main page, <a href='http://www.graphics-design.com'>";
 	echo "http://www.graphics-design.com</a> to find what you're looking for.";
 }else{
-	echo "<center><a href=javascript:history.back(1)><img src='../layout/arrowPrev.jpg' border=0></a><br>";
-	echo "<img src='../layout/divider.png'>";
+	echo "<center><a href=javascript:history.back(1)><img src='/layout/arrowPrev.jpg' border=0></a><br>";
+	echo "<img src='/layout/divider.png'>";
 
 	//Print every item located in $filename/$i.jpg or .png (up to $itemsInSet)
 	for ($i=1; $i<=$itemsInSet;$i++)
