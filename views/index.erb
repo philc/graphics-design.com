@@ -1,10 +1,6 @@
-<? 
-//Track the traffic
-//include ("scripts/tracker/sc_addhit.php");
-
-$pageTitle = "Free Web Graphics";
-require("templates/header.inc");
-?>
+<%# 
+ # $pageTitle = "Free Web Graphics"
+%>
 
 
 <b>Welcome</b><br>
@@ -25,26 +21,6 @@ site.
 
 <table border=0 cellpadding=0 cellspacing=4 width=553>
 <tr><td valign=top width=393>
-<?
-//--------------------------------------------------------------------------------------------------
-//News script
-//--------------------------------------------------------------------------------------------------
-//Require the creation display functions
-//require("scripts/news.inc");
-
-//Which type of news we're viewing
-//$type='all';
-
-//Check script arguments, or define them for the first time
-//if (!isset($offset) || $offset<0)
-//	$offset=0;
-//if (!isset($resultPerPage) || $resultsPerPage <1)
-//	$resultsPerPage=5;
-
-//Display news with (offset, resultsPerPage)
-//$result = displayNews($offset,$resultsPerPage, $type);
-
-?>
 
 </td>
 <!--Side column (books, polls) -->
@@ -68,5 +44,3 @@ href="http://www.statcounter.com/" target="_blank"><img
 src="http://c11.statcounter.com/counter.php?sc_project=1222284&amp;amp;java=0&amp;amp;security=e42cb21b&amp;amp;invisible=1" 
 alt="free stats" border="0"></a> </noscript>
 <!-- End of StatCounter Code -->
-
-<? require("templates/footer.inc"); ?>
