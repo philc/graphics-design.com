@@ -12,9 +12,8 @@ These are fully featured interfaces designed for clients. I have made many more 
      :offset => offset, :limit => limit, :order => [:date.desc]) %>
 <% items.each_with_index do |item, index| %>
   <%= erb "portfolio/_portfolio_item".to_sym, :locals => { :portfolio_item => item }, :layout => false %>
-  <% unless index == items.size - 1 %>
-    <img src='/layout/divider.png' width="100%"><br/>
-  <% end %>
+
+  <img src='/layout/divider.png' width="100%"><br/>
 
 <% end %>
 

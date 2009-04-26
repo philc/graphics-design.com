@@ -12,9 +12,8 @@ for PC and Macs. Font installation on linux can be tricky, but Gnome and KDE man
 <% downloads = Download.all(:offset => offset, :limit => limit) %>
 <% downloads.each_with_index do |download, index| %>
   <%= erb "downloads/_download_row".to_sym, :locals => { :download => download }, :layout => false %>
-  <% unless index == downloads.size - 1 %>
-    <img src='/layout/divider.png' width=100%><br>
-  <% end %>
+
+  <img src='/layout/divider.png' width=100%><br>
 
 <% end %>
 
