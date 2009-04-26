@@ -25,9 +25,10 @@ get "/:section/?" do
 end
 
 get "/:section/:subsection" do
-  render_with_title "#{params[:section]}/#{params[:subsection]}".to_sym
+  render_with_title "#{params[:section]}/#{params[:subsection]}".to_sym,
+    :offset => (params[:offset] || 0).to_i, :limit => (params[:limit] || 6).to_i
 end
 
-def render_with_title(page)
-  erb page, :locals => { :title => TITLES[page] }
+def render_with_title(page, locals = {})
+  erb page, :locals => locals.merge({ :title => TITLES[page] })
 end
