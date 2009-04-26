@@ -1,0 +1,21 @@
+<% @title = "Portfolio - Websites" %>
+
+<b>Websites</b><br>
+<img src="/layout/divider.png"><br>
+These are completed website layouts designed for customers. The websites may be nonfunctioning, or using a different layout at the time of viewing, so I have provided a <b>cached</b> version (an original version kept on this site) so you may see the original design.
+
+<br><br>
+
+<% items = Portfolio.all(:type => "website",
+     :offset => offset, :limit => limit, :order => [:date.desc]) %>
+<% items.each_with_index do |item, index| %>
+  <%= erb "portfolio/_portfolio_item".to_sym, :locals => { :portfolio_item => item }, :layout => false %>
+
+  <img src="/layout/divider.png" width="100%"><br/>
+
+<% end %>
+
+<%= erb :pagination_arrows, :locals =>
+      { :total => Portfolio.count(:type => "website"), :limit => limit,
+        :offset => offset, :page => "/portfolio/websites" },
+    :layout => false %>

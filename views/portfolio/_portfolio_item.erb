@@ -14,7 +14,7 @@
 
 <% date = portfolio_item.date.strftime("%Y-%m-%d") # => 2005-02-31
 %>
-<td valign=top width=100%><b>"<%= portfolio_item.title %>"</b> <%= date %><br/>
+<td valign=top width=100%><b>"<%= portfolio_item.title %>"</b> (<%= date %>)<br/>
 <%= portfolio_item.description %>
 <br/><br/><center>[ View:
   <% if portfolio_item.url %>
