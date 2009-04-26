@@ -1,6 +1,4 @@
-<? $pageTitle = "Portfolio - Interfaces";
-require("../templates/header.inc");
-?>
+<% @title = "Portfolio - Interfaces" %>
 
 <b>Interfaces</b><br>
 <img src="/layout/divider.png"><br>
@@ -13,7 +11,7 @@ These are fully featured interfaces designed for clients. I have made many more 
 <% items.each_with_index do |item, index| %>
   <%= erb "portfolio/_portfolio_item".to_sym, :locals => { :portfolio_item => item }, :layout => false %>
 
-  <img src='/layout/divider.png' width="100%"><br/>
+  <img src="/layout/divider.png" width="100%"><br/>
 
 <% end %>
 

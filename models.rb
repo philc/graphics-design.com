@@ -30,12 +30,8 @@ class Portfolio
   property :description, Text
   property :date, DateTime, :nullable => false
   property :url, String, :limit => 45
-  property :cacheUrl, String, :limit => 45
+  property :cache_url, String, :limit => 45, :field => "cacheUrl"
   property :thumbnail, String, :limit => 45
   property :type, String, :limit => 30
-
-  def cache_url
-    cacheUrl
-  end
 
 end
