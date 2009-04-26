@@ -1,0 +1,19 @@
+<% @title = "Downloads - Fonts" %>
+
+<b>Fonts</b><br>
+<img src="../layout/divider.png"><br>
+Here are some fonts for your computer, for use with graphic designing, computer themes, or on your webpage (not reccomended). 
+If you need help with installation, 
+here is an <a href="http://desktoppub.miningco.com/library/essentials/bl-e-fontinstall.htm">excellent guide for font installation</a> 
+for PC and Macs. Font installation on linux can be tricky, but Gnome and KDE managers can usually walk you through the installation.
+
+<br><br>
+
+<% downloads = Download.all %>
+<% downloads.each_with_index do |download, index| %>
+  <%= erb "downloads/_download_row".to_sym, :locals => { :download => download }, :layout => false %>
+  <% unless index == downloads.size - 1 %>
+    <img src='/layout/divider.png' width=100%><br>
+  <% end %>
+
+<% end %>

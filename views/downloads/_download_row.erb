@@ -1,0 +1,22 @@
+<%# Expects a "download" parameter %>
+
+<table border=0 cellpadding=0 cellspacing=4><tr>
+  
+  <td valign=top>
+  <% download_path = "/assets/downloads/#{download.type}/#{download.path}" %>
+  <b><a href="<%= download_path %>"><%= download.title %></a></b><br>
+
+  Approx filesize: <%= download.size %>K<br>
+
+  <%= download.description || "No description." %>
+  <br/>
+  </td>
+
+  <td><a href="<%= download_path %>"><img
+    src="<%= "/assets/downloads/#{download.type}/#{download.thumbnail}" %>"
+    border=2 style="border-color:#004866"></a>
+  </td>
+
+</tr></table>
+
+<br/>
