@@ -17,7 +17,7 @@
 <% end %>
 
 </td><td width=100%><center><font size=2 face=arial>
-Viewing <%= offset + 1 %> - <%= [offset + 1, total].min %> of <%= total %>.<br/>
+Viewing <%= offset+ 1 %> - <%= [offset + limit, total].min %> of <%= total %>.<br/>
 </td><td>
 <% if offset + limit >= total %>
   <img src="/layout/arrowNextGray.jpg" />

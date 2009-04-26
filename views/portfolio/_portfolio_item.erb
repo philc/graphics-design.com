@@ -1,0 +1,33 @@
+<% asset_path = "/assets/portfolio/#{portfolio_item.type}" %>
+
+
+
+<table border="0" cellpadding="0" cellspacing="4">
+<tr><td valign="top">
+<% if portfolio_item.cache_url %>
+  <a href="<%= asset_path %>/<%= portfolio_item.cache_url %>"><img
+    src="<%= asset_path %>/<%= portfolio_item.thumbnail %>" border=2 style="border-color:#004866" /></a>
+<% else %>
+  <img src="<%= asset_path %>/<%= portfolio_item.thumbnail %>" />
+<% end %>
+</td>
+
+<% date = portfolio_item.date.strftime("%Y-%m-%d") # => 2005-02-31
+%>
+<td valign=top width=100%><b>"<%= portfolio_item.title %>"</b> <%= date %><br/>
+<%= portfolio_item.description %>
+<br/><br/><center>[ View:
+  <% if portfolio_item.url %>
+    <a href="<%= portfolio_item.url %>">Actual site</a>
+  <% else %>
+    Actual site
+  <% end %>
+  |
+  <% if portfolio_item.cache_url %>
+  <a href="<%= asset_path %>/<%= portfolio_item.cache_url %>">Cached version</a>
+  <% else %>
+  Cached version
+  <% end %>
+  ]
+</center>
+</tr></table>

@@ -9,7 +9,7 @@ DataMapper.setup(:default, "sqlite3:#{File.dirname(__FILE__)}/db/gds.db")
 class Download
   include DataMapper::Resource
 
-  property :id, Integer, :serial => true, :key => true
+  property :id, Integer, :nullable => false, :serial => true, :key => true
   property :title, String, :nullable => false, :length => 30
   property :path, String, :nullable => false, :length => 40
   property :thumbnail, String, :length => 40
@@ -22,4 +22,20 @@ class Download
   property :subtype, String, :length => 30
 end
 
-DataMapper.auto_upgrade!
+class Portfolio
+  include DataMapper::Resource
+
+  property :id, Integer, :nullable => false, :serial => true, :key => true
+  property :title, String, :nullable => false, :limit => 40
+  property :description, Text
+  property :date, DateTime, :nullable => false
+  property :url, String, :limit => 45
+  property :cacheUrl, String, :limit => 45
+  property :thumbnail, String, :limit => 45
+  property :type, String, :limit => 30
+
+  def cache_url
+    cacheUrl
+  end
+
+end

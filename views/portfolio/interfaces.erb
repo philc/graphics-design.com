@@ -1,0 +1,24 @@
+<? $pageTitle = "Portfolio - Interfaces";
+require("../templates/header.inc");
+?>
+
+<b>Interfaces</b><br>
+<img src="/layout/divider.png"><br>
+These are fully featured interfaces designed for clients. I have made many more interfaces that are integrated into the complete website layouts, located in the <a href="/portfolio/websites">websites</a> section of my portfolio.
+
+<br><br>
+
+<% items = Portfolio.all(:type => "interface",
+     :offset => offset, :limit => limit, :order => [:date.desc]) %>
+<% items.each_with_index do |item, index| %>
+  <%= erb "portfolio/_portfolio_item".to_sym, :locals => { :portfolio_item => item }, :layout => false %>
+  <% unless index == items.size - 1 %>
+    <img src='/layout/divider.png' width="100%"><br/>
+  <% end %>
+
+<% end %>
+
+<%= erb :pagination_arrows, :locals =>
+      { :total => Portfolio.count(:type => "interface"), :limit => limit,
+        :offset => offset, :page => "/portfolio/interfaces" },
+    :layout => false %>
