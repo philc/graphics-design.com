@@ -1,0 +1,23 @@
+<% asset_path = "/assets/creations/#{creation.type}/#{creation.path}" %>
+
+<% date = creation.date.strftime("%b %Y ") # => May 2005
+   description = creation.description ? creation.description : "No description"
+%>
+<% if creation.type == "interface" %>
+  <center><a href="<%= asset_path %>"><img
+    src="<%= asset_path %>/thumbnail.jpg"></a>
+  </center><br>
+  <b>"<%= creation.title %>"</b> (<%= date %>)<br/>
+  <%= description %>
+<% elsif creation.type == "desktop" %>
+  <table border=0 cellspacing=4 cellpadding=0><tr>
+    <td><a href="<%= asset_path %>/<%= creation.path %>.jpg">
+  <img src="<%= asset_path %>/thumbnail.jpg" border="0"></a></td><td valign=top>
+  <b><%= date %></b><br>
+  <%= description %>
+  </td></tr></table>
+<% else %>
+  <center><img src="<%= asset_path %>"></center><br>
+  <b>"<%= creation.title %>"</b> (<%= date %>)<br/>
+  <%= description %>
+<% end %>

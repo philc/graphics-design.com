@@ -33,5 +33,15 @@ class Portfolio
   property :cache_url, String, :limit => 45, :field => "cacheUrl"
   property :thumbnail, String, :limit => 45
   property :type, String, :limit => 30
+end
 
+class Creation
+  include DataMapper::Resource
+
+  property :id, Integer, :nullable => false, :serial => true, :key => true
+  property :title, String, :nullable => false, :limit => 30
+  property :path, String, :limit => 30
+  property :description, Text
+  property :date, DateTime, :nullable => false
+  property :type, String, :limit => 30
 end
