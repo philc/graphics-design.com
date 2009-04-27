@@ -45,3 +45,16 @@ class Creation
   property :date, DateTime, :nullable => false
   property :type, String, :limit => 30
 end
+
+
+class FreeImage
+  include DataMapper::Resource
+  property :id, Integer, :nullable => false, :serial => true, :key => true
+  property :path, String, :limit => 30
+  property :title, Text
+  property :description, Text
+  property :items_in_set, Integer, :nullable => false, :field => "itemsInSet"
+  property :size, Float
+  property :date, DateTime, :nullable => false
+  property :type, String, :limit => 30, :nullable => false
+end
