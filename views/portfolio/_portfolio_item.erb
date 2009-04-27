@@ -1,7 +1,6 @@
 <% asset_path = "/assets/portfolio/#{portfolio_item.type}" %>
 
 
-
 <table border="0" cellpadding="0" cellspacing="4">
 <tr><td valign="top">
 <% if portfolio_item.cache_url %>
@@ -12,9 +11,9 @@
 <% end %>
 </td>
 
-<% date = portfolio_item.date.strftime("%Y-%m-%d") # => 2005-02-31
+<% date = portfolio_item.date.strftime("%b %Y ") # => May 2005
 %>
-<td valign=top width=100%><b>"<%= portfolio_item.title %>"</b> (<%= date %>)<br/>
+<td valign="top" width="100%"><b>"<%= portfolio_item.title %>"</b> (<%= date %>)<br/>
 <%= portfolio_item.description %>
 <br/><br/><center>[ View:
   <% if portfolio_item.url %>
