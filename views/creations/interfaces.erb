@@ -17,5 +17,6 @@ accompany webpages, vists my <a href="/portfolio">Portfolio</a> section.
 <% end %>
 
 <%= erb :pagination_arrows, :locals =>
-      { :total => Creation.count, :limit => limit, :offset => offset, :page => "/creations/interface" },
+      { :total => Creation.count(:type => "interface"), :limit => limit, :offset => offset,
+        :page => "/creations/interfaces"},
     :layout => false %>

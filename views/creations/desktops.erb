@@ -24,5 +24,6 @@ goes to their respective authors.</i>
 <% end %>
 
 <%= erb :pagination_arrows, :locals =>
-      { :total => Creation.count, :limit => limit, :offset => offset, :page => "/creations/desktops" },
+      { :total => Creation.count(:type => "desktop"), :limit => limit, :offset => offset,
+        :page => "/creations/desktops" },
     :layout => false %>
