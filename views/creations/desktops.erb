@@ -19,7 +19,7 @@ goes to their respective authors.</i>
 <% creations.each_with_index do |creation, index| %>
   <%= erb "creations/_creation_item".to_sym, :locals => { :creation => creation }, :layout => false %>
 
-  <img src='/layout/divider.png' width="100%"><br>
+  <img src="/layout/divider.png" width="100%"><br>
 
 <% end %>
 

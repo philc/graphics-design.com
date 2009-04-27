@@ -1,0 +1,21 @@
+<% @title = "Creations - Interfaces" %>
+
+<b>Interfaces</b><br>
+<img src="/layout/divider.png" /><br>
+Here are some older interfaces - each item on this page is a preview. Most of the interfaces are animated, 
+and to see the full interface, click on its image. Once again, to see the most recent interfaces that 
+accompany webpages, vists my <a href="/portfolio">Portfolio</a> section.
+<br><br>
+
+
+<% creations = Creation.all(:offset => offset, :limit => limit, :type => "interface") %>
+<% creations.each_with_index do |creation, index| %>
+  <%= erb "creations/_creation_item".to_sym, :locals => { :creation => creation }, :layout => false %>
+
+  <img src="/layout/divider.png" width="100%"><br>
+
+<% end %>
+
+<%= erb :pagination_arrows, :locals =>
+      { :total => Creation.count, :limit => limit, :offset => offset, :page => "/creations/interface" },
+    :layout => false %>
