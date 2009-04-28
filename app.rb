@@ -5,8 +5,8 @@ require "models"
 # Redirects for older versions of this site.
 # It used to be written in php and some pages link to .php
 get("/freeImages/*") { redirect301 request.url.gsub("freeImages", "freeimages") }
-
 get("/webDesign/*") { redirect301 request.url.gsub("webDesign", "webdesign") }
+get("/tipsTricks/*") { redirect301 request.url.gsub("tipsTricks", "tips_tricks") }
 
 def redirect301(url)
   header "Location" => url
@@ -29,6 +29,14 @@ end
 
 get "/" do
   render_with_title :index
+end
+
+get "/view_image_set*" do
+  next "" unless params[:id]
+  image = FreeImage.first(:id => params[:id].to_i)
+  puts "###### image : #{image.inspect}"
+  next "" unless image
+  render_with_title "freeimages/view_image_set".to_sym, :image => image
 end
 
 get "/:section/?" do
