@@ -4,11 +4,9 @@ require "models"
 
 # Redirects for older versions of this site.
 # It used to be written in php and some pages link to .php
-get("/freeImages/:action") { redirect301 request.url.gsub("freeImages", "freeimages") }
-get("/freeImages/?") { redirect301 request.url.gsub("freeImages", "freeimages") }
+get("/freeImages/*") { redirect301 request.url.gsub("freeImages", "freeimages") }
 
-get("/webDesign/:action") { redirect301 request.url.gsub("webDesign", "webdesign") }
-get("/webDesign/?") { redirect301 request.url.gsub("webDesign", "webdesign") }
+get("/webDesign/*") { redirect301 request.url.gsub("webDesign", "webdesign") }
 
 def redirect301(url)
   header "Location" => url
