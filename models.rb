@@ -57,4 +57,8 @@ class FreeImage
   property :size, Float
   property :date, DateTime, :nullable => false
   property :type, String, :limit => 30, :nullable => false
+
+  def file_extension
+    self.type == "texture" ? "jpg" : "png"
+  end
 end

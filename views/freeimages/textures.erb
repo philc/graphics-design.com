@@ -16,7 +16,7 @@ visit the <a href="../tipsTricks">Tips and Tricks</a> section.
 <% items.each_with_index do |item, index| %>
   <%= erb "freeimages/_image_item".to_sym, :locals => { :image => item }, :layout => false %>
 
-  <img src="/layout/divider.png" width="100%"><br/>
+  <img src="/layout/divider.png" width="100%" />
 
 <% end %>
 
