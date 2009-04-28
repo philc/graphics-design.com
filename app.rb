@@ -10,7 +10,7 @@ get("/tipsTricks/*") { redirect301 request.url.gsub("tipsTricks", "tips_tricks")
 
 def redirect301(url)
   header "Location" => url
-  status 301 # try with 303 as well
+  status 301
 end
 
 # todo: add some php routes in here so downloads/fonts.php works.
@@ -42,7 +42,6 @@ end
 get "/view_image_set*" do
   next "" unless params[:id]
   image = FreeImage.first(:id => params[:id].to_i)
-  puts "###### image : #{image.inspect}"
   next "" unless image
   render_with_title "freeimages/view_image_set".to_sym, :image => image
 end
