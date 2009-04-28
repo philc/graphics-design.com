@@ -11,30 +11,16 @@ visit the <a href="../tipsTricks">Tips and Tricks</a> section.
 <br><br>
 
 
-<?
-//--------------------------------------------------------------------------------------------------
-//Main Script		Handles resultsPerPage variables, calls the display functions
-//--------------------------------------------------------------------------------------------------
-//Require the creation display functions
-require("../scripts/layout.inc");
-require("../scripts/freeImages.inc");
+<% items = FreeImage.all(:type => "texture",
+     :offset => offset, :limit => limit, :order => [:date.desc]) %>
+<% items.each_with_index do |item, index| %>
+  <%= erb "freeimages/_image_item".to_sym, :locals => { :image => item }, :layout => false %>
 
-//Which type of creation we're viewing
-$type='texture';
+  <img src="/layout/divider.png" width="100%"><br/>
 
-//Check script arguments, or define them for the first time
-if (!isset($offset) || $offset<0)
-	$offset=0;
-if (!isset($resultPerPage) || $resultsPerPage <1)
-	$resultsPerPage=5;
+<% end %>
 
-//Display creations with (offset, resultsPerPage)
-$result = displayFreeImages($offset,$resultsPerPage, $type);
-
-displayNavArrows($result, $offset, $resultsPerPage, getenv("SCRIPT_NAME"));
-
-
-
-?>	
-
-<? require("../templates/footer.inc"); ?>
+<%= erb :pagination_arrows, :locals =>
+      { :total => FreeImage.count(:type => "texture"), :limit => limit,
+        :offset => offset, :page => "/freeimages/textures" },
+    :layout => false %>

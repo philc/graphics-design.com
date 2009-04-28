@@ -1,0 +1,25 @@
+  <!-- //Obtain the calling script's name so we can pass it to "viewImageSet.php"
+  $scriptName = getenv("SCRIPT_NAME");
+  $filesPath="freeImages/" . $imagePath;        //The "viewImageSet" script needs a path for the files
+  echo "<tr><td>";
+  echo "<a href='../scripts/viewImageSet.php?path=$filesPath&itemsInSet=$this->itemsInSet&extension=$extension'>";
+  echo "<img src='$imagePath/thumbnail.$extension' border=0></a></td>";   
+  echo "<td valign=top width=100%><b>\"$this->title\"</b> ($this->itemsInSet $this->type" . "s)<br>";
+  echo "Approx Image Size: " . $this->size . "K<br>";
+  if (!$this->description)
+    echo "No description<br>";
+  else
+    echo "$this->description<br>";
+  echo "</td></tr>";
+ -->
+<tr>
+  <td>
+  <a href="/viewImageSet?id=<%= image.id %>"><img
+    src="/assets/freeimages/<%= image.path %>/thumbnail.jpg" border="0" /></a>
+  </td>
+  <td valign="top" width="100%">
+    <b>"<%= image.title %>"</b> (<%= image.items_in_set %> <%= image.type %>s)<br/>
+    Approximate image size: <%= image.size %>K<br/>
+    <%= image.description ? "No description" : image.description %>
+  </td>
+</tr>
