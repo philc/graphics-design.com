@@ -29,14 +29,21 @@ roll = 'ie'; }
              { document.images[img1].src = ref1; document.images[img2].src = ref2; } }
      //-->
      </SCRIPT>
-	
+
 <style type="text/css">
-	img { border-color: "#004866"}
+  img { border-color: "#004866"}
+  #copyright {
+    text-align:center;
+    font-family:arial;
+  }
+  a {
+    color:#004866;
+  }
 </style>
 </head>
 
 
-<body bgcolor=#CFCFCF background="/layout/background.jpg" link="#D4DEE6" vlink="#004866">
+<body bgcolor=#CFCFCF background="/layout/background.jpg">
 
 <!--Main page width (800 pixels) table -->
 <centeR>
@@ -155,7 +162,9 @@ onMouseOut="msout1('webLinks','/layout/webLinks.jpg');">
 </tr></table>
 
 <center>
-&copy; 1999 - <%= Time.now.year %> <a href="http://ninjahacking.com">Phil Crosby</a><br>
+<div id="copyright">&copy; 1999 -
+  <%= Time.now.year %> <a href="http://ninjahacking.com">Phil Crosby</a>
+</div>
 
 
 
