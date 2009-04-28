@@ -64,3 +64,5 @@ class FreeImage
     self.type == "texture" ? "jpg" : "png"
   end
 end
+
+DataMapper.auto_upgrade!
