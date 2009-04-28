@@ -8,7 +8,7 @@
   <td valign="top" width="100%">
     <b>"<%= image.title %>"</b> (<%= image.items_in_set %> <%= image.type %>s)<br/>
     Approximate image size: <%= image.size %>K<br/>
-    <%= image.description ? "No description" : image.description %>
+    <%= image.description ? image.description : "No description" %>
   </td>
 </tr>
 </table>
