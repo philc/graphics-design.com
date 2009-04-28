@@ -35,6 +35,10 @@ get "/contact/?" do
   render_with_title :contact
 end
 
+get "/guestbook/?" do
+  render_with_title :guestbook
+end
+
 get "/view_image_set*" do
   next "" unless params[:id]
   image = FreeImage.first(:id => params[:id].to_i)
