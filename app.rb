@@ -7,13 +7,13 @@ require "models"
 get("/freeImages/*") { redirect301 request.url.gsub("freeImages", "freeimages") }
 get("/webDesign/*") { redirect301 request.url.gsub("webDesign", "webdesign") }
 get("/tipsTricks/*") { redirect301 request.url.gsub("tipsTricks", "tips_tricks") }
+get("*.php*") { redirect301 request.url.gsub(".php", "") }
 
 def redirect301(url)
   header "Location" => url
   status 301
 end
 
-# todo: add some php routes in here so downloads/fonts.php works.
 # I'm storing the title for each page in the page's file; I then pass that title to the surrounding
 # template. Parse out the line <% @title = "About" %> from each view file.
 unless defined? TITLES
