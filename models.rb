@@ -4,7 +4,9 @@ require "dm-core"
 # Functions for counting, like Word.all.count
 require "dm-aggregates"
 
-DataMapper.setup(:default, "sqlite3:#{File.dirname(__FILE__)}/db/gds.db")
+# DATABASE_URL is provided by heroku.
+DataMapper.setup(:default, ENV["DATABASE_URL"] ||
+  "sqlite3:#{File.dirname(__FILE__)}/db/gds.db")
 
 class Download
   include DataMapper::Resource
