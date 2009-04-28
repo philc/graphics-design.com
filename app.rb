@@ -50,7 +50,7 @@ get "/:section/?" do
   render_with_title "#{params[:section]}/index".to_sym
 end
 
-get "/:section/:subsection" do
+get "/:section/:subsection/?" do
   render_with_title "#{params[:section]}/#{params[:subsection]}".to_sym,
     :offset => (params[:offset] || 0).to_i, :limit => (params[:limit] || 6).to_i
 end
