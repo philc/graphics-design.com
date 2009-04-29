@@ -2,6 +2,14 @@ require "rubygems"
 require "sinatra"
 require "models"
 
+get("*") do
+  if request.url.index("http://graphics-design.com") == 0
+    redirect301 request.url.sub("http://graphics-design.com", "http://www.graphics-design.com")
+  else
+    pass
+  end
+end
+
 # Redirects for older versions of this site.
 # It used to be written in php and some pages link to .php
 get("/freeImages/*") { redirect301 request.url.gsub("freeImages", "freeimages") }
