@@ -19,8 +19,7 @@ get("/tipsTricks/*") { redirect301 request.url.gsub("tipsTricks", "tips_tricks")
 get("*.php*") { redirect301 request.url.gsub(".php", "") }
 
 def redirect301(url)
-  header "Location" => url
-  status 301
+  redirect url
 end
 
 # I'm storing the title for each page in the page's file; I then pass that title to the surrounding
