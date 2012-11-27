@@ -10,5 +10,6 @@ gem "dm-core"
 gem "thin"
 gem "pathological"
 gem "dm-aggregates"
-gem "dm-sqlite-adapter"
+# Don't use this on heroku.
+# gem "dm-sqlite-adapter"
 gem "dm-migrations"
