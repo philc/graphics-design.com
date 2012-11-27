@@ -10,6 +10,8 @@ gem "thin"
 gem "pathological"
 gem "dm-aggregates"
 
+gem "dm-postgres-adapter"
+
 # Don't use this on heroku.
 # gem "dm-sqlite-adapter"
 gem "dm-migrations"
