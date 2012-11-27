@@ -1,4 +1,5 @@
-require "rubygems"
+require "bundler/setup"
+require "pathological"
 require "sinatra"
 require "models"
 
