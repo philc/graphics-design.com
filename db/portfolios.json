@@ -1,0 +1,302 @@
+[
+    {
+        "cacheUrl": "clipart_giant/index.html",
+        "date": "2000-07-31T21:00:00-07:00",
+        "description": "One of my favorite designs with a color scheme that I don't use very often, but turned out well. The banner holder at the top of the site fits the layout well, and it has a seperate area for link buttons. I designed the banner (1010clipart.com) in the banner slot of the cached version.",
+        "id": 1,
+        "thumbnail": "clipart_giant/thumbnail.jpg",
+        "title": "Clipart Giant",
+        "type": "website",
+        "url": null
+    },
+    {
+        "cacheUrl": "ecyber_solutions/index.html",
+        "date": "2000-05-31T21:00:00-07:00",
+        "description": "A quick interface designed for Ecyber Solutions' e-commerce site. I did not design the globes, I just worked the text onto them and changed the color of the globes for the mouse-over \"highlight\" effect.",
+        "id": 2,
+        "thumbnail": "ecyber_solutions/thumbnail.jpg",
+        "title": "Ecyber Solutions",
+        "type": "interface",
+        "url": "http://www.ecybersolutions.com"
+    },
+    {
+        "cacheUrl": "highbrid_entertainment/interface.jpg",
+        "date": "2000-03-31T21:00:00-08:00",
+        "description": "This is an interface done for Highbrid Entertainment's website. It is a menu for each artist's webpage.",
+        "id": 3,
+        "thumbnail": "highbrid_entertainment/thumbnail.jpg",
+        "title": "Highbrid Entertainment",
+        "type": "interface",
+        "url": null
+    },
+    {
+        "cacheUrl": "highbrid_entertainment/index.html",
+        "date": "2000-01-31T21:00:00-08:00",
+        "description": "This is a DJ oriented site that I made a funky layout for. The site/group colors they requested were lime green on black. The fonts give it a grunge type feel.",
+        "id": 4,
+        "thumbnail": "highbrid_entertainment/thumbnail.jpg",
+        "title": "Highbrid Entertainment",
+        "type": "website",
+        "url": "http://www.highbrid.com"
+    },
+    {
+        "cacheUrl": "ngemu/logo.jpg",
+        "date": "2002-02-28T21:00:00-08:00",
+        "description": "A logo I made for the ngemu.com emulation site when they were doing a redesign. It was never submitted.",
+        "id": 5,
+        "thumbnail": "ngemu/thumbnail.jpg",
+        "title": "NGEmu - \\'Coming Soon\\'",
+        "type": "logo",
+        "url": null
+    },
+    {
+        "cacheUrl": "stickman_radio/logo.jpg",
+        "date": "2001-09-30T21:00:00-07:00",
+        "description": "A logo made for a friend's radio site. It wasn't ever used.",
+        "id": 6,
+        "thumbnail": "stickman_radio/thumbnail.jpg",
+        "title": "Stickman Radio",
+        "type": "logo",
+        "url": "http://www.stickmanradio.com"
+    },
+    {
+        "cacheUrl": "strife/index.html",
+        "date": "1999-03-31T21:00:00-08:00",
+        "description": "One of my amatuer designs, this was an attempt with a purple color scheme and some lightning effects. This group later merged with Highbrid Entertainment, which is another site I designed.",
+        "id": 7,
+        "thumbnail": "strife/thumbnail.jpg",
+        "title": "Strife Entertainment",
+        "type": "website",
+        "url": "http://members.tripod.com/Evorgleb/"
+    },
+    {
+        "cacheUrl": "takamo/screenshot.jpg",
+        "date": "1999-08-31T21:00:00-07:00",
+        "description": "This was a website for a futuristic online RPG game. The original website menu had mouse over effects that would work on the triangle menu (each button would light up). I later designed another section of this site, called \"Threshold\".",
+        "id": 8,
+        "thumbnail": "takamo/thumbnail.jpg",
+        "title": "Takamo",
+        "type": "website",
+        "url": "http://www.takamo.com"
+    },
+    {
+        "cacheUrl": "threshold/index.html",
+        "date": "1999-11-30T21:00:00-08:00",
+        "description": "Another futuristic looking webpage that was a part of the \"Takamo\" site I designed earlier. The menu is text based, so the client could easily change it if he needed to.",
+        "id": 9,
+        "thumbnail": "threshold/thumbnail.jpg",
+        "title": "Threshold",
+        "type": "website",
+        "url": "http://www.takamo.com/threshold.htm"
+    },
+    {
+        "cacheUrl": "highbrid_entertainment/logo.jpg",
+        "date": "2000-01-31T21:00:00-08:00",
+        "description": "A large entrance image for the Highbrid Entertainment website. The Shape of the \"H\" was someone else's design; I created the graphical logo effects.",
+        "id": 10,
+        "thumbnail": "highbrid_entertainment/thumbnail.jpg",
+        "title": "Highbrid Entertainment",
+        "type": "logo",
+        "url": null
+    },
+    {
+        "cacheUrl": null,
+        "date": "1998-09-30T21:00:00-07:00",
+        "description": "Simple laserpointer site with a metal wire-frame layout. One of my earliest designs for a commercial site.",
+        "id": 11,
+        "thumbnail": "laserpointer-net/thumbnail.jpg",
+        "title": "Lasterpointer.net",
+        "type": "website",
+        "url": null
+    },
+    {
+        "cacheUrl": null,
+        "date": "1998-11-30T21:00:00-08:00",
+        "description": "Another early and simple layout designed around the logo I made for this site. And yes, the title is spelled correctly.",
+        "id": 12,
+        "thumbnail": "finewatchs-net/thumbnail.jpg",
+        "title": "Finewatchs.net",
+        "type": "website",
+        "url": null
+    },
+    {
+        "cacheUrl": null,
+        "date": "1998-05-31T21:00:00-07:00",
+        "description": "This is a layout done for one of my personal sites. It was laid out to be fast and able to handle large amounts of content generated with CGI and a database.",
+        "id": 13,
+        "thumbnail": "ps_pcgames/thumbnail.jpg",
+        "title": "Philisoft PC Game Zone",
+        "type": "website",
+        "url": null
+    },
+    {
+        "cacheUrl": "ps_pcgames2/index.html",
+        "date": "2000-02-29T21:00:00-08:00",
+        "description": "This is a revision of my original PC Game Zone site. It was made to handle content better and to be used without frames.",
+        "id": 14,
+        "thumbnail": "ps_pcgames2/thumbnail.jpg",
+        "title": "Philisoft PC Game Zone (2nd revision)",
+        "type": "website",
+        "url": null
+    },
+    {
+        "cacheUrl": null,
+        "date": "1999-06-30T21:00:00-07:00",
+        "description": "This was a layout for another of my personal sites, meant to be a repository for Macromedia Flash designs and tutorials.",
+        "id": 15,
+        "thumbnail": "ps_flash/thumbnail.jpg",
+        "title": "Philisoft Flash Zone",
+        "type": "website",
+        "url": null
+    },
+    {
+        "cacheUrl": null,
+        "date": "1999-04-30T21:00:00-07:00",
+        "description": "An incredibly fast loading site with mostly HTML graphics and one large graphical header. This layout had a lot of room for additional content and expandable sections, as requested.",
+        "id": 16,
+        "thumbnail": "techspot-net/thumbnail.jpg",
+        "title": "Techspot.net",
+        "type": "website",
+        "url": null
+    },
+    {
+        "cacheUrl": null,
+        "date": "1999-01-31T21:00:00-08:00",
+        "description": "A fast and simple site for mostly informational pages.",
+        "id": 17,
+        "thumbnail": "microton/thumbnail.jpg",
+        "title": "Microton Online Media",
+        "type": "website",
+        "url": null
+    },
+    {
+        "cacheUrl": null,
+        "date": "2000-03-31T21:00:00-08:00",
+        "description": "A cool aqua on black layout with a blue fire look on the logo and menus. This layout was never used.",
+        "id": 18,
+        "thumbnail": "123mp3/thumbnail.jpg",
+        "title": "123MP3",
+        "type": "website",
+        "url": null
+    },
+    {
+        "cacheUrl": "1010clipart/screenshot.jpg",
+        "date": "2000-05-31T21:00:00-07:00",
+        "description": "An interesting piecemeal design for a \"top list\" site, which listed the top clipart sites.",
+        "id": 19,
+        "thumbnail": "1010clipart/thumbnail.jpg",
+        "title": "1010clipart.com",
+        "type": "website",
+        "url": "http://www.1010clipart.com"
+    },
+    {
+        "cacheUrl": "abstract_mp3/logo.gif",
+        "date": "1998-08-31T21:00:00-07:00",
+        "description": "MP3 logo for a light blue and black layout. I liked the use of black lettering on a black background, because it transitions well and is still readable.",
+        "id": 20,
+        "thumbnail": "abstract_mp3/thumbnail.gif",
+        "title": "Abstract MP3\\'s",
+        "type": "logo",
+        "url": null
+    },
+    {
+        "cacheUrl": "audiorock_mp3/logo.gif",
+        "date": "1998-04-30T21:00:00-07:00",
+        "description": "Very quick logo for a friend's MP3 site. The lack of color makes this logo one of my least favorites.",
+        "id": 21,
+        "thumbnail": "audiorock_mp3/thumbnail.gif",
+        "title": "AudioRock MP3\\'s",
+        "type": "logo",
+        "url": null
+    },
+    {
+        "cacheUrl": "finewatchs-net/logo.jpg",
+        "date": "1998-11-30T21:00:00-08:00",
+        "description": "One of my earliest commercial logos, and one of my favorites. The font fit the theme and style of the site very well.",
+        "id": 22,
+        "thumbnail": "finewatchs-net/thumbnail.jpg",
+        "title": "Finewatchs.net",
+        "type": "logo",
+        "url": null
+    },
+    {
+        "cacheUrl": "kickncaraudio/logo.jpg",
+        "date": "2001-01-31T21:00:00-08:00",
+        "description": "Logo for an online car audio sales / installation website. I designed the interface for this site as well, and it had a really good graphical look and color scheme to it.",
+        "id": 23,
+        "thumbnail": "kickncaraudio/thumbnail.jpg",
+        "title": "Kick\\'n Car Audio",
+        "type": "logo",
+        "url": null
+    },
+    {
+        "cacheUrl": "laserpointer-net/logo.jpg",
+        "date": "1998-06-30T21:00:00-07:00",
+        "description": "Early logo for a laserpointer site. After this logo design, I later made the rest of the website.",
+        "id": 24,
+        "thumbnail": "laserpointer-net/thumbnail.jpg",
+        "title": "Laserpointer.net",
+        "type": "logo",
+        "url": null
+    },
+    {
+        "cacheUrl": "street_fighter_battleground/logo.jpg",
+        "date": "1998-12-31T21:00:00-08:00",
+        "description": "A logo for a friend's gaming site. I didn't draw the character's pictures, I just used them.",
+        "id": 25,
+        "thumbnail": "street_fighter_battleground/thumbnail.jpg",
+        "title": "Street Fighter Battleground",
+        "type": "logo",
+        "url": "http://street-fighter.hypermart.net/"
+    },
+    {
+        "cacheUrl": "zebra_joe/logo.jpg",
+        "date": "2001-03-31T21:00:00-08:00",
+        "description": "An very fun and comical looking logo - it has a zebra theme while being colorful and artistic at the same time. One of my favorites.",
+        "id": 26,
+        "thumbnail": "zebra_joe/thumbnail.jpg",
+        "title": "Zebra Joes.com",
+        "type": "logo",
+        "url": null
+    },
+    {
+        "cacheUrl": "corrview/footer.jpg",
+        "date": "2002-08-31T21:00:00-07:00",
+        "description": "Logo required to implement a photo of the product. The colors had to match a sky pattern that the rest of the site uses. Turned out well.",
+        "id": 27,
+        "thumbnail": "corrview/footerThumb.jpg",
+        "title": "Corrview Footer",
+        "type": "logo",
+        "url": "http://www.corrview.com"
+    },
+    {
+        "cacheUrl": "corrview/logo.jpg",
+        "date": "2002-09-30T21:00:00-07:00",
+        "description": "Logo with sunburst theme, and matching \"sky\" colors to link up with the rest of the site.",
+        "id": 28,
+        "thumbnail": "corrview/logoThumb.jpg",
+        "title": "Corrview Logo",
+        "type": "logo",
+        "url": "http://www.corrview.com"
+    },
+    {
+        "cacheUrl": "nextgen_emu1/index.html",
+        "date": "2000-06-30T21:00:00-07:00",
+        "description": "A personal site of mine based on emulation. This was to have a technical and \"video-game\" look to it, being colorful and active. I implemented animated images into the layout, which gets very annoying after awhile (one reason why this layout was replaced by revision 2).",
+        "id": 29,
+        "thumbnail": "nextgen_emu1/thumbnail.jpg",
+        "title": "Next Gen Emu (Version 1)",
+        "type": "website",
+        "url": null
+    },
+    {
+        "cacheUrl": "nextgen_emu2/index.html",
+        "date": "2002-02-26T16:11:33-08:00",
+        "description": "One of my favorite color schemes (purple and black) used in a very hip metallic layout, that is clean and creative at the same time. The background is a large transparent gray image that stays in a fixed location while the page scrolls.",
+        "id": 30,
+        "thumbnail": "nextgen_emu2/thumbnail.jpg",
+        "title": "Next Gen Emu (Version 2)",
+        "type": "website",
+        "url": null
+    }
+]
