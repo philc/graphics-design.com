@@ -1,0 +1,26 @@
+{{#isDesktop}}
+  <table border=0 cellspacing=4 cellpadding=0><tr>
+    <td><a href="{{assetPath}}/{{path}}.jpg">
+  <img src="{{assetPath}}/thumbnail.jpg" border="0"></a></td><td valign=top>
+  <b>{{date}}</b><br>
+  {{{description}}}
+  </td></tr></table>
+{{/isDesktop}}
+
+{{#isInterface}}
+  <br>
+  <center><a href="{{assetPath}}/index.html"><img
+    src="{{assetPath}}/thumbnail.jpg"></a>
+  </center><br>
+  <b>"{{title}}"</b> ({{date}})<br/>
+  {{description}}
+  <br/><br/>
+{{/isInterface}}
+
+{{#isLogo}}
+  <center><img src="{{assetPath}}"></center><br>
+  <b>"{{title}}"</b> ({{date}})<br/>
+  {{description}}
+{{/isLogo}}
+
+<img src="/layout/divider.png" width="100%"><br>
