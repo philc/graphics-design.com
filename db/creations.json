@@ -1,6 +1,6 @@
 [
     {
-        "date": "1999-02-28T21:00:00-08:00",
+        "date": "1999-02-28T21:00:00-00:00",
         "description": "Very blue rendition of a logo. I like the blue fire, but I was going filter happy at the time!",
         "id": 1,
         "path": "blue_fire_graphix.gif",
@@ -8,7 +8,7 @@
         "type": "logo"
     },
     {
-        "date": "1999-03-31T21:00:00-08:00",
+        "date": "1999-03-31T21:00:00-00:00",
         "description": "GDS text on a big plate. I was playing with some color schemes, orange/red looks fairly nice on solid black. I was going for a \"cutout\" feel, as if this logo was stamped like a liscense plate. The font used is \"Mattise ITC\".",
         "id": 6,
         "path": "gds_plate.gif",
@@ -16,7 +16,7 @@
         "type": "logo"
     },
     {
-        "date": "1998-05-31T21:00:00-07:00",
+        "date": "1998-05-31T21:00:00-00:00",
         "description": "One of my first logos for GDS, even before creating the GDS site. The texture is a custom texture (flat 2d image with a hot wax filter applied over it, colorized blue) in the shape of a spiral. The spiral shape is from the font \"Button Button\". Unfortunately I knew little about text readability, and the logo is difficult to read.",
         "id": 7,
         "path": "spiral_red_gds.gif",
@@ -24,7 +24,7 @@
         "type": "logo"
     },
     {
-        "date": "1998-10-31T21:00:00-08:00",
+        "date": "1998-10-31T21:00:00-00:00",
         "description": "Earlier logo using light and shining shades gray. The texture was created with EyeCandy, when the EyeCandy filters were popular",
         "id": 8,
         "path": "monochrome_graphix.gif",
@@ -32,7 +32,7 @@
         "type": "logo"
     },
     {
-        "date": "1999-01-31T21:00:00-08:00",
+        "date": "1999-01-31T21:00:00-00:00",
         "description": "Fun logo with white particles circulating around the main text. The orange trials were done by manually smearing an orange blur.",
         "id": 9,
         "path": "fire_particles_graphics.gif",
@@ -40,7 +40,7 @@
         "type": "logo"
     },
     {
-        "date": "1999-04-30T21:00:00-07:00",
+        "date": "1999-04-30T21:00:00-00:00",
         "description": "One of my first \"real\" logos in terms of quality and production value. A favorite of myself and my friends from my early days.",
         "id": 10,
         "path": "electric_gds.jpg",
@@ -48,7 +48,7 @@
         "type": "logo"
     },
     {
-        "date": "1999-05-31T21:00:00-07:00",
+        "date": "1999-05-31T21:00:00-00:00",
         "description": "A derivation of the same idea as the original \"Electric GDS\" logo.",
         "id": 11,
         "path": "electric_gds2.jpg",
@@ -56,7 +56,7 @@
         "type": "logo"
     },
     {
-        "date": "1999-04-30T21:00:00-07:00",
+        "date": "1999-04-30T21:00:00-00:00",
         "description": "A small simple flood logo with a lense flare by hand and a manually enhanced gradient. This was used on my original business cards.",
         "id": 12,
         "path": "gds_flood_button.gif",
@@ -64,7 +64,7 @@
         "type": "logo"
     },
     {
-        "date": "1998-10-31T21:00:00-08:00",
+        "date": "1998-10-31T21:00:00-00:00",
         "description": "Purple washed logo with a comic book gradient.",
         "id": 13,
         "path": "comic_graphix.gif",
@@ -72,7 +72,7 @@
         "type": "logo"
     },
     {
-        "date": "1998-10-31T21:00:00-08:00",
+        "date": "1998-10-31T21:00:00-00:00",
         "description": "A logo meant to look like the bottom of a pool with it's hints and color. Inspired from the official \"AutoFX\" logo of the time.",
         "id": 14,
         "path": "round_aqua_gds.gif",
@@ -80,7 +80,7 @@
         "type": "logo"
     },
     {
-        "date": "2000-05-31T21:00:00-07:00",
+        "date": "2000-05-31T21:00:00-00:00",
         "description": "Again experimenting with the yellow/orange colorscheme on a white background; this logo was around the same time I created a Flash website with this same colorscheme (red/orange on white background). The font for the background text is \"SnapITC\".",
         "id": 15,
         "path": "yellow_wish_gds.jpg",
@@ -88,7 +88,7 @@
         "type": "logo"
     },
     {
-        "date": "2000-12-31T21:00:00-08:00",
+        "date": "2000-12-31T21:00:00-00:00",
         "description": "One of my favorites, this image demonstrates why I often do my designs on white backdrops. Dark backdrops cannot fully implement drop shadows, which can potentially add a lot of depth and character to web designs/logos. While drop shadows are often overused, perspective shadows are not, and fit well with logos such as this.",
         "id": 16,
         "path": "marble_gds.jpg",
@@ -96,7 +96,7 @@
         "type": "logo"
     },
     {
-        "date": "1998-03-31T21:00:00-08:00",
+        "date": "1998-03-31T21:00:00-00:00",
         "description": "This interface is horribly outdated, but represents an iface type that I liked around the time of creation - those resembling remotes. The texture was created with EyeCandy's \"fir\" filter, back when those filters were popular.",
         "id": 17,
         "path": "fir_remote",
@@ -104,7 +104,7 @@
         "type": "interface"
     },
     {
-        "date": "1998-06-30T21:00:00-07:00",
+        "date": "1998-06-30T21:00:00-00:00",
         "description": "This is a very old interface, and has many errors. Originally I tried to make it like one of those old TV stations. I like the colors and the screen, but the buttons are horrid.",
         "id": 18,
         "path": "graphix_console",
@@ -112,7 +112,7 @@
         "type": "interface"
     },
     {
-        "date": "1998-03-31T21:00:00-08:00",
+        "date": "1998-03-31T21:00:00-00:00",
         "description": "A very blue interface made in an hour. The buttons have the classic push down effect and nice shadows on them. The edges of the interface are very rough as I didn't know how to preserve edge smoothness at the time. The texture was made by me.",
         "id": 19,
         "path": "aqua-4",
@@ -120,7 +120,7 @@
         "type": "interface"
     },
     {
-        "date": "1999-01-31T21:00:00-08:00",
+        "date": "1999-01-31T21:00:00-00:00",
         "description": "Very cool interface, nice colors. This wsa designed to be a main page introduction interface, if I ever decided to use one for design purposes. The rings were done with creative eliptical selections. The front two buttons light up upon mouse over.",
         "id": 20,
         "path": "rings",
@@ -128,7 +128,7 @@
         "type": "interface"
     },
     {
-        "date": "1998-05-31T21:00:00-07:00",
+        "date": "1998-05-31T21:00:00-00:00",
         "description": "Despite being ugly and unattractive, this interface has some great animations to it. Each mouse over action plays a fairly showy animation in the center window. Unfortunatley all of the animations take a long time to load, so upon viewing this interface, be patient with the loading times.",
         "id": 21,
         "path": "square",
@@ -136,7 +136,7 @@
         "type": "interface"
     },
     {
-        "date": "2001-03-31T21:00:00-08:00",
+        "date": "2001-03-31T21:00:00-00:00",
         "description": "One of my first desktop designs; I was looking at linux at the time and wanted to mimick some of their desktop designs (ala Enlightenment, Gnome) and found the shell enhancement program, desktopX. This was before I started using litestep as my desktop shell. Only 1 row of tasks on the taskbar, but cool menus, and the desktop icons are present on this design.",
         "id": 25,
         "path": "blue_desktopx",
@@ -144,7 +144,7 @@
         "type": "desktop"
     },
     {
-        "date": "2001-05-31T21:00:00-07:00",
+        "date": "2001-05-31T21:00:00-00:00",
         "description": "My first design using the great \"Litestep\" as a shell replacement. The design is incomplete, but I took a screen shot of it anyway. This setup had great functionality but limited display capabilities; when I made this, I didn't have any onscreen meters, shortcut menus, etc. It was mostly hotkey based.",
         "id": 26,
         "path": "litestep_original",
@@ -152,7 +152,7 @@
         "type": "desktop"
     },
     {
-        "date": "2001-10-31T21:00:00-08:00",
+        "date": "2001-10-31T21:00:00-00:00",
         "description": "One of my favorite/best designs for windows. This uses litestep and an excellent background by shadowness.com, with navigational menus across the top and 2 rows of tasks on the bottom, with various displays. I'm using WindowBlinds to draw the fancy window borders. This was before I added cpu/mem monitors to the top bar.",
         "id": 27,
         "path": "blue_lightening",
@@ -160,7 +160,7 @@
         "type": "desktop"
     },
     {
-        "date": "2002-10-30T21:00:00-08:00",
+        "date": "2002-10-30T21:00:00-00:00",
         "description": "A design for my linux machine, with GNOME 2.0 as the desktop environment. The windows are managed by Sawfish and the fonts are gorgeously rendered by Xft. The top two fonts in the dialog on the screen shot are available in the downloads section.",
         "id": 28,
         "path": "insanity",
@@ -168,7 +168,7 @@
         "type": "desktop"
     },
     {
-        "date": "2004-05-26T13:57:24-07:00",
+        "date": "2004-05-26T13:57:24-00:00",
         "description": "A GNOME design that uses a consistent blue and gray color scheme throughout; the background is by Hologenik Designs.",
         "id": 29,
         "path": "hologenik",
@@ -176,7 +176,7 @@
         "type": "desktop"
     },
     {
-        "date": "2002-07-02T21:00:00-07:00",
+        "date": "2002-07-02T21:00:00-00:00",
         "description": "This is a desktop I created for an auxilary machine in my lab for users of the house and non-computer types. The machine was equiped with lots of games, so the large icons (with mouseover effects) made gaming quick and simple.",
         "id": 30,
         "path": "textured_terminal_1",
@@ -184,7 +184,7 @@
         "type": "desktop"
     },
     {
-        "date": "2002-08-29T21:00:00-07:00",
+        "date": "2002-08-29T21:00:00-00:00",
         "description": "A very space-conservative desktop design for a laptop with only 800x600 max resolution (every pixel was precious) running Windows XP. Tasks could wrap to a second row, not shown in the screenshot. Also, virtual desktops are supported via hotkeys (also not shown).",
         "id": 31,
         "path": "micron_laptop",
@@ -192,7 +192,7 @@
         "type": "desktop"
     },
     {
-        "date": "2002-12-12T21:00:00-08:00",
+        "date": "2002-12-12T21:00:00-00:00",
         "description": "This is a newer design for my newer laptop running windows XP. It is supposed to be very simple as well as cartoonish. The menus in the bottom left corner act as simple \"start menus,\" but custom designed and much faster.",
         "id": 32,
         "path": "cartoon_coyote",
@@ -200,7 +200,7 @@
         "type": "desktop"
     },
     {
-        "date": "2004-05-09T21:00:00-07:00",
+        "date": "2004-05-09T21:00:00-00:00",
         "description": "A desktop for a laptop running GNOME. Yellow and gray are pervasive. The icon theme is a modified version of Crystal.",
         "id": 33,
         "path": "space_fire",
@@ -208,7 +208,7 @@
         "type": "desktop"
     },
     {
-        "date": "2004-07-31T14:31:00-07:00",
+        "date": "2004-07-31T14:31:00-00:00",
         "description": "Fresh update in the color scheme!<br><br>\r\n\r\nThe wallpaper is called <a href=\"http://www.deviantart.com/view/9344518/\">Relapse</a>, by Aarora.<br><br>\r\n\r\nIcons are modified versions of those in the <a href=\"http://www.deviantart.com/deviation/9342636/\">Zenith</a> package.",
         "id": 34,
         "path": "relapse",
@@ -216,7 +216,7 @@
         "type": "desktop"
     },
     {
-        "date": "2005-05-24T17:30:49-07:00",
+        "date": "2005-05-24T17:30:49-00:00",
         "description": "A more natural look this time around. The wallpaper is called <a href=\"http://www.caedes.net/Zephir.cgi?lib=Caedes::Infopage&image=d_spin_9-1111683193.jpg\">\"With ice on the rocks?\"</a> and the icons are <a href=\"http://gnome-look.org/content/show.php?content=24364\">gargantuan (Gant)</a>.",
         "id": 35,
         "path": "ice-rocks",
