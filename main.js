@@ -26,7 +26,12 @@ const pageToTitle = {
   "creations/index.html": "Creations",
   "contact/index.html": "Contact",
   "webdesign/index.html": "Web Design",
-  "portfolio/index.html": "Portfolio"
+  "portfolio/index.html": "Portfolio",
+  "tips_tricks/index.html": "Tips and Tricks",
+  "downloads/index.html": "Downloads",
+  "links/index.html": "Links",
+  "links/link_back/index.html": "Links - Link back to GDS",
+  "guestbook/index.html": "Guestbook"
 }
 
 async function writeStaticPages() {
@@ -34,9 +39,12 @@ async function writeStaticPages() {
     await writePage(path, title);
 }
 
+async function readDB(jsonFile) {
+  return JSON.parse(await Deno.readTextFile(jsonFile)).sort((a, b) => b.date.localeCompare(a.date));
+}
+
 async function writeFreeImagesPages() {
-  const images = JSON.parse(await Deno.readTextFile("db/free_images.json")).
-        sort((a, b) => b.date.localeCompare(a.date));
+  const images = await readDB("db/free_images.json");
 
   const htmlForImageType = async (type) => {
     const assets = images.filter((i) => i.type == type);
@@ -62,22 +70,26 @@ async function writeFreeImagesPages() {
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+// Produces: "1998-03-31T21:00:00-00:00" => "Mar 1998"
+function formatDateStr(dateStr) {
+  const date = DateTime.parse(dateStr, "yyyy-MM-ddTHH:mm:ss-00:00");
+  return months[date.getMonth()] + " " + DateTime.format(date, "yyyy");
+}
+
 async function writeCreationsPages() {
-  const images = JSON.parse(await Deno.readTextFile("db/creations.json")).
-        sort((a, b) => b.date.localeCompare(a.date));
+  const images = await readDB("db/creations.json");
 
   const htmlForImageType = async (type) => {
     const baseAssetPath = `/assets/creations/${type}/`;
     const assets = images.filter((i) => i.type == type);
 
     let htmls = assets.map(async (i) => {
-      const date = DateTime.parse(i.date, "yyyy-MM-ddTHH:mm:ss-00:00");
       return await renderTemplate("creations/creation_item.html", {
         title: i.title,
         assetPath: baseAssetPath + "/" + i.path,
         type: i.type,
         path: i.path,
-        date: months[date.getMonth()] + " " + DateTime.format(date, "yyyy"),
+        date: formatDateStr(i.date),
         description: i.description,
         isInterface: type == "interface",
         isDesktop: type == "desktop",
@@ -96,22 +108,20 @@ async function writeCreationsPages() {
 }
 
 async function writePortfolioPages() {
-  const images = JSON.parse(await Deno.readTextFile("db/portfolios.json")).
-        sort((a, b) => b.date.localeCompare(a.date));
+  const images = await readDB("db/portfolios.json");
 
   const htmlForImageType = async (type) => {
     const baseAssetPath = `/assets/portfolio/${type}/`;
     const assets = images.filter((i) => i.type == type);
 
     let htmls = assets.map(async (i) => {
-      const date = DateTime.parse(i.date, "yyyy-MM-ddTHH:mm:ss-00:00");
       return await renderTemplate("portfolio/portfolio_item.html", {
         assetPath: baseAssetPath,
         title: i.title,
         cacheUrl: i.cacheUrl,
         thumbnail: i.thumbnail,
         url: i.url,
-        date: months[date.getMonth()] + " " + DateTime.format(date, "yyyy"),
+        date: formatDateStr(i.date),
         description: i.description
       });
     });
@@ -126,7 +136,32 @@ async function writePortfolioPages() {
             { assetsHtml: await htmlForImageType("interface") });
 }
 
+async function writeDownloadsPages() {
+  const images = await readDB("db/downloads.json");
+
+  const htmlForImageType = async (type) => {
+    const baseAssetPath = `/assets/downloads/${type}/`;
+    const assets = images.filter((i) => i.type == type);
+
+    let htmls = assets.map(async (i) => {
+      return await renderTemplate("downloads/download_item.html", {
+        assetPath: baseAssetPath,
+        title: i.title,
+        size: i.size,
+        thumbnail: i.thumbnail,
+        path: i.path,
+        description: i.description
+      });
+    });
+    return (await Promise.all(htmls)).join("\n");
+  };
+
+  writePage("downloads/fonts/index.html", "Downloads - Fonts",
+            { assetsHtml: await htmlForImageType("font") });
+}
+
 await writeStaticPages();
 await writeFreeImagesPages();
 await writeCreationsPages();
 await writePortfolioPages();
+await writeDownloadsPages();
