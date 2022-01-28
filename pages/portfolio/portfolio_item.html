@@ -1,0 +1,35 @@
+<table border="0" cellpadding="0" cellspacing="4">
+  <tr>
+    <td valign="top">
+      {{#cacheUrl}}
+        <a href="{{assetPath}}/{{cacheUrl}}"><img src="{{assetPath}}/{{thumbnail}}" border=2
+            style="border-color:#004866" /></a>
+      {{/cacheUrl}}
+      {{^cacheUrl}}
+        <img src="{{assetPath}}/{{thumbnail}}" />
+      {{/cacheUrl}}
+    </td>
+
+    <td valign="top" width="100%"><b>"{{title}}"</b> ({{date}})<br />
+      {{description}}
+      <br /><br />
+      <center>[ View:
+        {{#url}}
+          <a href="{{url}}">Actual site</a>
+        {{/url}}
+        {{^url}}
+          Actual site
+        {{/url}}
+        |
+        {{#cacheUrl}}
+          <a href="{{assetPath}}/{{cacheUrl}}">Cached version</a>
+        {{/cacheUrl}}
+        {{^cacheUrl}}
+          Cached version
+        {{/cacheUrl}}
+        ]
+      </center>
+  </tr>
+</table>
+
+<img src="/layout/divider.png" width="100%"><br />

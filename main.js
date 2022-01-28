@@ -24,7 +24,9 @@ const pageToTitle = {
   "index.html": "Free Web Graphics",
   "freeimages/index.html": "Free Images",
   "creations/index.html": "Creations",
-  "contact/index.html": "Contact"
+  "contact/index.html": "Contact",
+  "webdesign/index.html": "Web Design",
+  "portfolio/index.html": "Portfolio"
 }
 
 async function writeStaticPages() {
@@ -93,6 +95,38 @@ async function writeCreationsPages() {
             { assetsHtml: await htmlForImageType("logo") });
 }
 
+async function writePortfolioPages() {
+  const images = JSON.parse(await Deno.readTextFile("db/portfolios.json")).
+        sort((a, b) => b.date.localeCompare(a.date));
+
+  const htmlForImageType = async (type) => {
+    const baseAssetPath = `/assets/portfolio/${type}/`;
+    const assets = images.filter((i) => i.type == type);
+
+    let htmls = assets.map(async (i) => {
+      const date = DateTime.parse(i.date, "yyyy-MM-ddTHH:mm:ss-00:00");
+      return await renderTemplate("portfolio/portfolio_item.html", {
+        assetPath: baseAssetPath,
+        title: i.title,
+        cacheUrl: i.cacheUrl,
+        thumbnail: i.thumbnail,
+        url: i.url,
+        date: months[date.getMonth()] + " " + DateTime.format(date, "yyyy"),
+        description: i.description
+      });
+    });
+    return (await Promise.all(htmls)).join("\n");
+  };
+
+  writePage("portfolio/websites/index.html", "Portfolio - Websites",
+            { assetsHtml: await htmlForImageType("website") });
+  writePage("portfolio/logos/index.html", "Portfolio - Logos",
+            { assetsHtml: await htmlForImageType("logo") });
+  writePage("portfolio/interfaces/index.html", "Portfolio - Interfaces",
+            { assetsHtml: await htmlForImageType("interface") });
+}
+
 await writeStaticPages();
 await writeFreeImagesPages();
 await writeCreationsPages();
+await writePortfolioPages();
