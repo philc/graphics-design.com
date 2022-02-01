@@ -1,0 +1,78 @@
+
+
+<HTML>
+<HEAD>
+	<TITLE>Interface</TITLE>
+</HEAD>
+
+<BODY bgcolor="black">
+<center>
+
+<script langauge="javascript">
+
+      <!--// Preload MouseOver Images with Browser Detection
+
+      browser_name = navigator.appName;
+      browser_version = parseFloat(navigator.appVersion); 
+
+      if (browser_name == "Netscape" && browser_version >= 3.0) { roll = 'true'; }
+      else if (browser_name == "Microsoft Internet Explorer" && browser_version >= 4.0) { roll = 'true'; }
+      else { roll = 'false'; }
+
+      if (roll == 'true')  {
+
+      free=new Image(5,5);free.src="free.gif";
+      creations=new Image(5,5);creations.src="creations.gif";
+      design=new Image(5,5);design.src="design.gif";
+      portfolio=new Image(5,5);portfolio.src="portfolio.gif";
+      tips=new Image(5,5);tips.src="tips.gif";
+      downloads=new Image(5,5);downloads.src="downloads.gif";
+      linkImg=new Image(5,5);linkImg.src="links.gif";
+      other=new Image(5,5);other.src="other.gif";
+
+      function msover(img,ref) { if (roll == 'true') { document.images[img].src = ref; } }
+      function msout(img,ref)  { if (roll == 'true') { document.images[img].src = ref; } }
+
+      }
+
+      //-->
+
+      </SCRIPT>
+
+
+
+
+
+<P><P><P>
+
+<table border=0 cellpadding=0 cellspacing=0>
+
+<tr><td colspan=3><img src="top.jpg"></td></tr>
+
+<tr><td><img src="left.jpg"></td><td><img src="tv.gif" name="screen"></td><td><img src="right.jpg"></td></tr></table>
+
+<table border=0 cellpadding=0 cellspacing=0>
+<tr><td colspan=3><img src="menut.jpg"></td></tr>
+
+<tr><td><img src="menu.jpg" border=0 usemap="#menu"></td></tr>
+
+<tr><td><img src="menub.jpg"></td></tr>
+
+</table>
+
+<map name="menu">
+<area shape="rect" coords="34,2,117,30" href="index.html" onMouseOver="msover('screen',free.src);">
+<area shape="rect" coords="118,2,173,30" href="index.html" onMouseOver="msover('screen',creations.src);">
+<area shape="rect" coords="174,2,237,30" href="index.html" onMouseOver="msover('screen',design.src);">
+<area shape="rect" coords="238,2,288,30" href="index.html" onMouseOver="msover('screen',portfolio.src);">
+<area shape="rect" coords="289,2,358,30" href="index.html" onMouseOver="msover('screen',tips.src);">
+<area shape="rect" coords="360,2,418,30" href="index.html" onMouseOver="msover('screen',downloads.src);">
+<area shape="rect" coords="419,2,456,30" href="index.html" onMouseOver="msover('screen',linkImg.src);">
+<area shape="rect" coords="457,2,516,30" href="index.html" onMouseOver="msover('screen',other.src);">
+<area shape="default" nohref>
+</map>
+
+
+</BODY>
+</HTML>
+

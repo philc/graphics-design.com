@@ -1,0 +1,28 @@
+
+
+</head>
+
+<body background="http://www.philisoft.com/emu/images/bg.gif" text="white" bgproperties="fixed" bgcolor="black" marginwidth="0" marginheight="0" topmargin="0" rightmargin="0" link="aqua" vlink="teal">
+<center>
+<DIV ID="bglayer" STYLE="position:absolute; left:0; top:0; width:100%;"> 
+<center>
+
+
+
+<img src="http://www.philisoft.com/emu/images/top.gif" width="780" height="77"><br>
+<table border="0" cellpadding="0" cellspacing="0"><Tr><td><img src="http://www.philisoft.com/emu/images/banner_left.gif" width="193" height="60"></td><td><img src="http://www.philisoft.com/emu/images/banner1.gif" width="468" height="60"></td><td><img src="http://www.philisoft.com/emu/images/banner_right.gif" width="119" height="60"></td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0"><tr><td><img src="http://www.philisoft.com/emu/images/banner_u_left.gif" width="198" height="64" usemap="#news_map" border=0></td><td>
+
+<a href=javascript:toggle() onMouseOver=msover1('toggle','http://www.philisoft.com/emu/images/toggle2.gif'); 
+		onMouseOut=msout1('toggle','http://www.philisoft.com/emu/images/toggle1.gif');>
+
+<img src="http://www.philisoft.com/emu/images/toggle1.gif" border="0" name="toggle" height="36" width="201" alt="Internet Explorer 5 ONLY!"></a><br><img src="http://www.philisoft.com/emu/images/space_toggle.gif"></td><td><img src="http://www.philisoft.com/emu/images/banner_u_right.gif" width="381" height="64"></td></tr></table>
+
+
+
+<table border="0" cellpadding="0" cellspacing="0"><tr><td width="197" valign="top"><img src="http://www.philisoft.com/emu/images/menu.gif"  usemap="#menu" border=0></td>
+<td width="425" valign="top">
+
+
+
+<!--Center column content-->
