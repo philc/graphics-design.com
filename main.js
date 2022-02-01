@@ -1,16 +1,9 @@
 import * as Mustache from 'https://deno.land/x/mustache/mod.ts';
 import * as Path from "https://deno.land/std@0.122.0/path/mod.ts";
 import * as DateTime from "https://deno.land/std@0.122.0/datetime/mod.ts";
+import * as fs from "https://deno.land/std@0.122.0/fs/mod.ts";
 
 const buildDir = "public";
-
-async function writePage(path, title, templateParams) {
-  const content = await renderPage(path, title, templateParams);
-  const destPath = Path.join(buildDir, path)
-  let c = Path.dirname(destPath);
-  Deno.mkdir(Path.dirname(destPath), { recursive: true });
-  await Deno.writeTextFile(destPath, content);
-}
 
 async function renderTemplate(path, templateParams) {
   return await Mustache.renderFile(Path.join("pages", path), templateParams);
@@ -19,6 +12,14 @@ async function renderTemplate(path, templateParams) {
 async function renderPage(path, title, templateParams) {
   const body = await renderTemplate(path, templateParams);
   return await Mustache.renderFile("pages/layout.html", { title: title, body: body});
+}
+
+// TODO(philc): Rename this to srcPath
+async function writePage(path, title, templateParams) {
+  const content = await renderPage(path, title, templateParams);
+  const destPath = Path.join(buildDir, path);
+  fs.ensureDir(Path.dirname(destPath));
+  await Deno.writeTextFile(destPath, content);
 }
 
 const pageToTitle = {
@@ -53,6 +54,7 @@ async function writeFreeImagesPages() {
     const assets = images.filter((i) => i.type == type);
     let htmls = assets.map(async (i) => {
       return await renderTemplate("freeimages/image_item.html", {
+        id: i.id,
         title: i.title,
         fileExtension: (type == "texture") ? "jpg" : "png",
         itemsInSet: i.itemsInSet,
@@ -69,6 +71,22 @@ async function writeFreeImagesPages() {
             { assetsHtml: await htmlForImageType("button") });
   writePage("freeimages/textures/index.html", "Free Images - Textures",
             { assetsHtml: await htmlForImageType("texture") });
+
+
+  // Every "free image" set has its own viewer page displaying the images in the set.
+  for (let image of images) {
+    const items = [];
+    const extension = (image.type == "texture") ? "jpg" : "png";
+    for (let j = 1; j <= image.itemsInSet; j++)
+      items.push({ path: `/assets/freeimages/${image.type}/${image.path}/${j}.${extension}` });
+    const content = await renderPage("freeimages/image_set.html",
+                                     `Free images - ${image.id}`,
+                                     { images: items });
+    const destPath = Path.join(buildDir, `freeimages/image_set/${image.id}.html`);
+    fs.ensureDir(Path.dirname(destPath));
+    await Deno.writeTextFile(destPath, content);
+  }
+
 }
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
