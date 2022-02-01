@@ -1,4 +1,4 @@
-import * as Mustache from 'https://deno.land/x/mustache/mod.ts';
+import * as Mustache from 'https://deno.land/x/mustache@v0.3.0/mod.ts';
 import * as Path from "https://deno.land/std@0.122.0/path/mod.ts";
 import * as DateTime from "https://deno.land/std@0.122.0/datetime/mod.ts";
 import * as fs from "https://deno.land/std@0.122.0/fs/mod.ts";
