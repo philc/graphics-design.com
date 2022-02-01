@@ -2,8 +2,10 @@ import * as Mustache from 'https://deno.land/x/mustache/mod.ts';
 import * as Path from "https://deno.land/std@0.122.0/path/mod.ts";
 import * as DateTime from "https://deno.land/std@0.122.0/datetime/mod.ts";
 import * as fs from "https://deno.land/std@0.122.0/fs/mod.ts";
+// Not stable as of 2022-01-31; requires --unstable flag:
+import * as fsCopy from "https://deno.land/std@0.122.0/fs/copy.ts";
 
-const buildDir = "public";
+const buildDir = "docs";
 
 async function renderTemplate(path, templateParams) {
   return await Mustache.renderFile(Path.join("pages", path), templateParams);
@@ -18,8 +20,20 @@ async function renderPage(path, title, templateParams) {
 async function writePage(path, title, templateParams) {
   const content = await renderPage(path, title, templateParams);
   const destPath = Path.join(buildDir, path);
-  fs.ensureDir(Path.dirname(destPath));
+  await fs.ensureDir(Path.dirname(destPath));
   await Deno.writeTextFile(destPath, content);
+}
+
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+// Produces: "1998-03-31T21:00:00-00:00" => "Mar 1998"
+function formatDateStr(dateStr) {
+  const date = DateTime.parse(dateStr, "yyyy-MM-ddTHH:mm:ss-00:00");
+  return months[date.getMonth()] + " " + DateTime.format(date, "yyyy");
+}
+
+async function readDB(jsonFile) {
+  return JSON.parse(await Deno.readTextFile(jsonFile)).sort((a, b) => b.date.localeCompare(a.date));
 }
 
 const pageToTitle = {
@@ -41,10 +55,6 @@ async function writeStaticPages() {
     await writePage(path, title);
   // 404.html doesn't render itself inside layout.html.
   Deno.copyFile("pages/404.html", Path.join(buildDir, "404.html"));
-}
-
-async function readDB(jsonFile) {
-  return JSON.parse(await Deno.readTextFile(jsonFile)).sort((a, b) => b.date.localeCompare(a.date));
 }
 
 async function writeFreeImagesPages() {
@@ -72,7 +82,6 @@ async function writeFreeImagesPages() {
   writePage("freeimages/textures/index.html", "Free Images - Textures",
             { assetsHtml: await htmlForImageType("texture") });
 
-
   // Every "free image" set has its own viewer page displaying the images in the set.
   for (let image of images) {
     const items = [];
@@ -83,18 +92,10 @@ async function writeFreeImagesPages() {
                                      `Free images - ${image.id}`,
                                      { images: items });
     const destPath = Path.join(buildDir, `freeimages/image_set/${image.id}.html`);
-    fs.ensureDir(Path.dirname(destPath));
+    await fs.ensureDir(Path.dirname(destPath));
     await Deno.writeTextFile(destPath, content);
   }
 
-}
-
-const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-
-// Produces: "1998-03-31T21:00:00-00:00" => "Mar 1998"
-function formatDateStr(dateStr) {
-  const date = DateTime.parse(dateStr, "yyyy-MM-ddTHH:mm:ss-00:00");
-  return months[date.getMonth()] + " " + DateTime.format(date, "yyyy");
 }
 
 async function writeCreationsPages() {
@@ -103,8 +104,7 @@ async function writeCreationsPages() {
   const htmlForImageType = async (type) => {
     const baseAssetPath = `/assets/creations/${type}/`;
     const assets = images.filter((i) => i.type == type);
-
-    let htmls = assets.map(async (i) => {
+    const htmls = assets.map(async (i) => {
       return await renderTemplate("creations/creation_item.html", {
         title: i.title,
         assetPath: baseAssetPath + "/" + i.path,
@@ -134,8 +134,7 @@ async function writePortfolioPages() {
   const htmlForImageType = async (type) => {
     const baseAssetPath = `/assets/portfolio/${type}/`;
     const assets = images.filter((i) => i.type == type);
-
-    let htmls = assets.map(async (i) => {
+    const htmls = assets.map(async (i) => {
       return await renderTemplate("portfolio/portfolio_item.html", {
         assetPath: baseAssetPath,
         title: i.title,
@@ -163,8 +162,7 @@ async function writeDownloadsPages() {
   const htmlForImageType = async (type) => {
     const baseAssetPath = `/assets/downloads/${type}/`;
     const assets = images.filter((i) => i.type == type);
-
-    let htmls = assets.map(async (i) => {
+    const htmls = assets.map(async (i) => {
       return await renderTemplate("downloads/download_item.html", {
         assetPath: baseAssetPath,
         title: i.title,
@@ -181,8 +179,14 @@ async function writeDownloadsPages() {
             { assetsHtml: await htmlForImageType("font") });
 }
 
-await writeStaticPages();
-await writeFreeImagesPages();
-await writeCreationsPages();
-await writePortfolioPages();
-await writeDownloadsPages();
+async function buildWebsite() {
+  await fsCopy.copy("public", "docs", { overwrite: true });
+
+  await writeStaticPages();
+  await writeFreeImagesPages();
+  await writeCreationsPages();
+  await writePortfolioPages();
+  await writeDownloadsPages();
+}
+
+buildWebsite();
