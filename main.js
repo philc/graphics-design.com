@@ -2,9 +2,10 @@ import * as Mustache from 'https://deno.land/x/mustache/mod.ts';
 import * as Path from "https://deno.land/std@0.122.0/path/mod.ts";
 import * as DateTime from "https://deno.land/std@0.122.0/datetime/mod.ts";
 
+const buildDir = "public";
+
 async function writePage(path, title, templateParams) {
   const content = await renderPage(path, title, templateParams);
-  const buildDir = "public";
   const destPath = Path.join(buildDir, path)
   let c = Path.dirname(destPath);
   Deno.mkdir(Path.dirname(destPath), { recursive: true });
@@ -37,6 +38,8 @@ const pageToTitle = {
 async function writeStaticPages() {
   for (let [path, title] of Object.entries(pageToTitle))
     await writePage(path, title);
+  // 404.html doesn't render itself inside layout.html.
+  Deno.copyFile("pages/404.html", Path.join(buildDir, "404.html"));
 }
 
 async function readDB(jsonFile) {
