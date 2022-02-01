@@ -1,3 +1,6 @@
+// This builds the site and stages it into the docs/ folder.
+// Invoke with deno run --allow-write --allow-read --unstable main.js
+
 import * as Mustache from 'https://deno.land/x/mustache@v0.3.0/mod.ts';
 import * as Path from "https://deno.land/std@0.122.0/path/mod.ts";
 import * as DateTime from "https://deno.land/std@0.122.0/datetime/mod.ts";
@@ -16,7 +19,6 @@ async function renderPage(path, title, templateParams) {
   return await Mustache.renderFile("pages/layout.html", { title: title, body: body});
 }
 
-// TODO(philc): Rename this to srcPath
 async function writePage(path, title, templateParams) {
   const content = await renderPage(path, title, templateParams);
   const destPath = Path.join(buildDir, path);
@@ -26,7 +28,7 @@ async function writePage(path, title, templateParams) {
 
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-// Produces: "1998-03-31T21:00:00-00:00" => "Mar 1998"
+// Transforms "1998-03-31T21:00:00-00:00" => "Mar 1998"
 function formatDateStr(dateStr) {
   const date = DateTime.parse(dateStr, "yyyy-MM-ddTHH:mm:ss-00:00");
   return months[date.getMonth()] + " " + DateTime.format(date, "yyyy");
@@ -95,7 +97,6 @@ async function writeFreeImagesPages() {
     await fs.ensureDir(Path.dirname(destPath));
     await Deno.writeTextFile(destPath, content);
   }
-
 }
 
 async function writeCreationsPages() {
@@ -183,6 +184,7 @@ async function buildWebsite() {
   await fsCopy.copy("public", "docs", { overwrite: true });
 
   await writeStaticPages();
+  // Write each section of the site.
   await writeFreeImagesPages();
   await writeCreationsPages();
   await writePortfolioPages();
