@@ -18,5 +18,6 @@ href="https://www.graphics-design.com">graphics-design.com</a>!
 main.js builds the site:
 
         deno run --allow-write --allow-read --unstable main.js
+        (or just ./main.js)
 
 The site is staged into "docs/", because this is the folder that Github Pages sources its content from.

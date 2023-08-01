@@ -1,5 +1,5 @@
+#!/usr/bin/env deno run --allow-read --allow-write --unstable
 // This builds the site and stages it into the docs/ folder.
-// Invoke with deno run --allow-write --allow-read --unstable main.js
 
 import * as Mustache from 'https://deno.land/x/mustache@v0.3.0/mod.ts';
 import * as Path from "https://deno.land/std@0.122.0/path/mod.ts";
